@@ -1,0 +1,5 @@
+[book]
+authors = ["John Fercher"]
+multilingual = false
+src = "src"
+title = "Software Literature Review"
