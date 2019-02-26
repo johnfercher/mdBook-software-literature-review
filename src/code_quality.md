@@ -8,6 +8,7 @@
 
 ## Videos
 1. [Palestra Clean Code (Código Limpo)](https://www.youtube.com/watch?v=1IHNc-_u7OI)
+2. [Software Anti-Patterns: How to destroy a codebase for developers](https://www.youtube.com/watch?v=MTCYhbfSAuA)
 
 ## Livros
 1. [Clean Code](https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
