@@ -4,6 +4,7 @@
 | Título | Autor | Idioma |
 |-----------------|-------|:--------:|
 | [Estrutura de controle](https://pt.wikipedia.org/wiki/Estrutura_de_controle) | Wikipédia | :brazil: |
+| [Which programs are faster?](https://benchmarksgame-team.pages.debian.net/benchmarksgame/) | The Computer Language Benchmarks Game | :us: |
 
 ## Podcasts
 | Título | Autor | Idioma |
