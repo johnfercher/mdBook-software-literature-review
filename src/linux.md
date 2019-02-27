@@ -10,3 +10,4 @@
 
 ## Videos
 1. [How Linux is Built](https://www.youtube.com/watch?v=yVpbFMhOAwE)
+2. [The mind behind Linux | Linus Torvalds](https://www.youtube.com/watch?v=o8NPllzkFhE)
