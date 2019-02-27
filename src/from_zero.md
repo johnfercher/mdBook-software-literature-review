@@ -1,5 +1,10 @@
 # Aprendendo o Zero
 
+## Artigos
+| Título | Autor | Idioma |
+|-----------------|-------|:--------:|
+| [Estrutura de controle](https://pt.wikipedia.org/wiki/Estrutura_de_controle) | Wikipédia | :brazil: |
+
 ## Podcasts
 | Título | Autor | Idioma |
 |-----------------|-------|:--------:|
