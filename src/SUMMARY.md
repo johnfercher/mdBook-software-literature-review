@@ -1,6 +1,7 @@
 # Summary
 
 - [Início](./index.md)
+
 - [Aprendendo o Zero](./from_zero.md)
     - [Python](./python.md)
     - [C#](./csharp.md)
@@ -28,22 +29,9 @@
 
 - [Orientação a Objetos](./oop.md)
 
-- [APIs](./apis.md)
+- [Git](./git.md)
 
-- [Metodologias Ágeis](./agile.md)
-    - [Scrum](./scrum.md)
-    - [Extreme Programming](./xp.md)
-    - [Kanban](./kanban.md)
-
-- [Domain-Driven Design](./ddd.md)
-
-- [SOLID](./solid.md)
-
-- [Design Patterns](./design_patterns.md)
-
-- [Microsserviços](./microservices.md)
-
-- [Programação Funcional](./functional_programming.md)
+- [Testes](./tests.md)
 
 - [Banco de Dados](./database.md)
     - [SQL](./sql.md)
@@ -53,20 +41,32 @@
         - [OracleDB](./oracle_db.md)
     - [NoSQL](./no_sql.md)
         - [MongoDB](./mongo_db.md)
-        
-- [Git](./git.md)
 
-- [Docker](./docker.md)
+- [APIs](./apis.md)
 
-- [Kubernetes](./kubernetes.md)
+- [Metodologias Ágeis](./agile.md)
+    - [Scrum](./scrum.md)
+    - [Extreme Programming](./xp.md)
+    - [Kanban](./kanban.md)
 
-- [Linux](./linux.md)
+- [SOLID](./solid.md)
 
-- [Cloud](./cloud.md)
+- [Domain-Driven Design](./ddd.md)
 
-- [Testes](./tests.md)
+- [Design Patterns](./design_patterns.md)
 
-- [Algortimos](./algorithms.md)
+- [DevOps](./devops.md)
+    - [Docker](./docker.md)
+    - [Kubernetes](./kubernetes.md)
+    - [Linux](./linux.md)
+    - [Cloud](./cloud.md)
+    - [Ansible](./ansible.md)
+    
+- [Microsserviços](./microservices.md)
+
+- [Programação Funcional](./functional_programming.md)
+
+- [Algoritmos](./algorithms.md)
 
 - [Security](./security.md)
 
