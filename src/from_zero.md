@@ -25,6 +25,7 @@
 | [Can you become a pro web developer in a year?](https://www.youtube.com/watch?v=oKJz7HmrTro) | [Stefan Mischook](https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q) | :us: |
 | [Is 40 yrs too old to learn to code?](https://www.youtube.com/watch?v=jcggB6vRUzE) | [Stefan Mischook](https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q) | :us: |
 | [Learn Foundation Programming Concepts in JUST 15.49 minutes!](https://www.youtube.com/watch?v=6qDCrDHJ00g&t=842s) | [Stefan Mischook](https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q) | :us: |
+| [What is a "senior" software engineer? The difference between junior and senior engineers.)](https://www.youtube.com/watch?v=dzvRIwCbT4g) | [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw) | :us: |
 
 ## Relacionados
 - [Python](./python.md)
