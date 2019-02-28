@@ -27,6 +27,7 @@
 5. [Growing the Rust Community | Mozilla ♥ Rust](https://www.youtube.com/watch?v=duv0tuPAnO0)
 6. [Putting Rust into Production at Mozilla | Mozilla ♥ Rust](https://www.youtube.com/watch?v=2RhbYpgVpg0)
 7. [Should you Learn Rust For Web Development?](https://www.youtube.com/watch?v=h98Xk9aHAd4)
+8. [Hello Rust! #9 - Go vs Rust - Concurrency and Race Conditions (race-conditions, ownership, mutex)](https://www.youtube.com/watch?v=B5xYBrxVSiE)
 
 ## Eventos
 1. [Rust Conference](https://rustconf.com/)
