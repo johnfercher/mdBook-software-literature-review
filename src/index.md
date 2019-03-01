@@ -30,6 +30,9 @@
         - [SOLID](./solid.md)
         - [Domain-Driven Design](./ddd.md)
     - [Design Patterns](./design_patterns.md)
+        - [Criacionais](./creational.md)
+        - [Estruturais](./structural.md)
+        - [Comportamentais](./behavioral.md)
     - [Testes](./tests.md)
     - [Programação Funcional](./functional_programming.md)
     
@@ -59,8 +62,6 @@
 - [Git](./git.md)
   
 - [Microsserviços](./microservices.md)
-
-
 
 - [Algoritmos](./algorithms.md)
 

@@ -63,8 +63,6 @@
   
 - [Microsserviços](./microservices.md)
 
-
-
 - [Algoritmos](./algorithms.md)
 
 - [Security](./security.md)
