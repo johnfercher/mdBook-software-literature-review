@@ -58,7 +58,9 @@
     - [Ansible](./ansible.md)
     
 - [APIs](./apis.md)
-
+    - [REST](./rest.md)
+    - [GraphQL](./graphql.md)
+    
 - [Git](./git.md)
   
 - [Microsserviços](./microservices.md)
