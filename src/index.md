@@ -26,13 +26,12 @@
     - [R](./r.md)
         
 - [Qualidade de  Código](./code_quality.md)
-
-- [Orientação a Objetos](./oop.md)
-
-- [Git](./git.md)
-
-- [Testes](./tests.md)
-
+    - [Orientação a Objetos](./oop.md)
+        - [SOLID](./solid.md)
+        - [Domain-Driven Design](./ddd.md)
+    - [Design Patterns](./design_patterns.md)
+    - [Testes](./tests.md)
+    
 - [Banco de Dados](./database.md)
     - [SQL](./sql.md)
         - [MySQL](./mysql.md)
@@ -41,19 +40,11 @@
         - [OracleDB](./oracle_db.md)
     - [NoSQL](./no_sql.md)
         - [MongoDB](./mongo_db.md)
-
-- [APIs](./apis.md)
-
+        
 - [Metodologias Ágeis](./agile.md)
     - [Scrum](./scrum.md)
     - [Extreme Programming](./xp.md)
     - [Kanban](./kanban.md)
-
-- [SOLID](./solid.md)
-
-- [Domain-Driven Design](./ddd.md)
-
-- [Design Patterns](./design_patterns.md)
 
 - [DevOps](./devops.md)
     - [Docker](./docker.md)
@@ -62,6 +53,10 @@
     - [Cloud](./cloud.md)
     - [Ansible](./ansible.md)
     
+- [APIs](./apis.md)
+
+- [Git](./git.md)
+  
 - [Microsserviços](./microservices.md)
 
 - [Programação Funcional](./functional_programming.md)
