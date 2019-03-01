@@ -31,6 +31,7 @@
         - [Domain-Driven Design](./ddd.md)
     - [Design Patterns](./design_patterns.md)
     - [Testes](./tests.md)
+    - [Programação Funcional](./functional_programming.md)
     
 - [Banco de Dados](./database.md)
     - [SQL](./sql.md)
@@ -59,7 +60,7 @@
   
 - [Microsserviços](./microservices.md)
 
-- [Programação Funcional](./functional_programming.md)
+
 
 - [Algoritmos](./algorithms.md)
 

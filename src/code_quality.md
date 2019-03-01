@@ -32,3 +32,4 @@
     - [Domain-Driven Design](./ddd.md)
 - [Design Patterns](./design_patterns.md)
 - [Testes](./tests.md)
+- [Programação Funcional](./functional_programming.md)
