@@ -1,4 +1,4 @@
-# Início [![GitHub stars](https://img.shields.io/github/stars/johnfercher/mdBook-software-literature-review.svg?style=social&label=Stars)](repository) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)][mit]
+# Início [![GitHub stars](https://img.shields.io/github/stars/johnfercher/mdBook-software-literature-review.svg?style=social&label=Stars)][repository] [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)][mit]
 
 - [Início](./index.md)
 
@@ -76,5 +76,5 @@
 
 - [Regex](./regex.md)
 
-[repository]: https://github.com/johnfercher/mdBook-software-literature-review
+[repository]: https://github.com/johnfercher/software-development
 [mit]: #
