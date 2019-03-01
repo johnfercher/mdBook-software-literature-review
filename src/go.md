@@ -10,3 +10,6 @@
 
 ## Podcasts
 1. [A linguagem Go – Hipsters #67](https://hipsters.tech/linguagem-go-hipsters-67/)
+
+## Comunidade
+1. [Telegram - GoBr](https://t.me/go_br)

@@ -19,3 +19,6 @@
 ## Videos
 1. [What are the Python Specializations? ](https://www.youtube.com/watch?v=09WD02w5ovg)
 2. [Should you Learn Python in 2016-17?](https://www.youtube.com/watch?v=CwhhTr5EJsA)
+
+## Comunidade
+1. [Telegram - Python Brasil](https://t.me/pythonbr)
