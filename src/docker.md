@@ -6,6 +6,7 @@
 ## Videos
 1. [What is Docker? Why it's popular and how to use it to save money (tutorial)](https://www.youtube.com/watch?v=IbUXb4pQbPY)
 2. [Virtual Machines and Containers for Beginners](https://www.youtube.com/watch?v=AMGJoVgkjGk)
+3. [Compose v3, Swarm e Docker Stack - Parte1](https://www.youtube.com/watch?v=hBObTO56VTY)
 
 ## Comunidade
 1. [Telegram - dockerbr](https://t.me/dockerbr)
