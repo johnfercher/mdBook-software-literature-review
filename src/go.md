@@ -11,5 +11,8 @@
 ## Podcasts
 1. [A linguagem Go – Hipsters #67](https://hipsters.tech/linguagem-go-hipsters-67/)
 
+## Cursos
+1. [Golang REST API With Mux](https://www.youtube.com/watch?v=SonwZ6MF5BE)
+
 ## Comunidade
 1. [Telegram - GoBr](https://t.me/go_br)
