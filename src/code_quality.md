@@ -25,14 +25,3 @@
 | [Lidando com legados](https://www.lambda3.com.br/2017/01/podcast-28-lidando-com-legados/) | [Lambda 3](https://www.lambda3.com.br) | :brazil: |
 | [Sistemas Legados](https://devnaestrada.com.br/2018/08/17/sistemas-legados.html) | [Dev na Estrada](https://devnaestrada.com.br) | :brazil: |
 | [Code Review](https://devnaestrada.com.br/2018/05/04/code-review.html) | [Dev na Estrada](https://devnaestrada.com.br) | :brazil: |
-
-## Relacionados
-- [Orientação a Objetos](./oop.md)
-    - [SOLID](./solid.md)
-    - [Domain-Driven Design](./ddd.md)
-- [Design Patterns](./design_patterns.md)
-    - [Criacionais](./creational.md)
-    - [Estruturais](./structural.md)
-    - [Comportamentais](./behavioral.md)
-- [Testes](./tests.md)
-- [Programação Funcional](./functional_programming.md)

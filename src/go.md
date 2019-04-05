@@ -3,6 +3,7 @@
 ## Artigos
 1. [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
 2. [Concurrency and Parallelism in Golang](https://medium.com/@tilaklodha/concurrency-and-parallelism-in-golang-5333e9a4ba64)
+3. [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/)
 
 ## Videos
 1. [Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
@@ -16,3 +17,5 @@
 
 ## Comunidade
 1. [Telegram - GoBr](https://t.me/go_br)
+2. [Peter Bourgon - Blog](https://peter.bourgon.org/articles/)
+3. [Go kit - A toolkit for microservices](https://gokit.io/)
