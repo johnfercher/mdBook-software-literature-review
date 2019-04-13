@@ -32,11 +32,14 @@
 | [Is It Time to Rewrite the Operating System in Rust?](https://www.youtube.com/watch?v=HgtRAbE1nBM) | [InfoQ](https://www.youtube.com/channel/UCkQX1tChV7Z7l1LFF4L9j_g)  | :us: |
 
 ## Cursos
-1. [Rust Fundamentals](https://www.pluralsight.com/courses/rust-fundamentals)
+| Título | Autor | Idioma |
+|-----------------|-------|:--------:|
+| [Rust Fundamentals](https://www.pluralsight.com/courses/rust-fundamentals) | [Pluralsight](https://www.pluralsight.com)  | :us: |
 
 ## Comunidade
 1. [Rust Brasil](https://t.me/rustlangbr)
 2. [Reddit Rust](https://www.reddit.com/r/rust/)
+3. [Hello Rust!](https://www.youtube.com/channel/UCZ_EWaQZCZuGGfnuqUoHujw)
 
 ## Eventos
 1. [Rust Conference](https://rustconf.com/)
