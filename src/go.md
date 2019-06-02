@@ -6,6 +6,7 @@
 3. [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/)
 4. [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
 5. [Go-tcha: When nil != nil ](https://dev.to/pauljlucas/go-tcha-when-nil--nil-hic)
+6. [How To Use Go Interfaces](https://blog.chewxy.com/2018/03/18/golang-interfaces/)
 
 ## Videos
 1. [Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)

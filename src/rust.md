@@ -8,6 +8,7 @@
 | Título | Autor | Idioma |
 |-----------------|-------|:--------:|
 | [Rust – memory safety without garbage collector](https://theburningmonk.com/2015/05/rust-memory-safety-without-gc/) | [The Burning Monk](https://theburningmonk.com/) | :us: |
+| [How Rust Achieves Thread Safety](https://manishearth.github.io/blog/2015/05/30/how-rust-achieves-thread-safety/) | [Manish Goregaokar’s blog](https://manishearth.github.io/) | :us: |
 
 ## Livros
 | Título | Autor | Idioma |
