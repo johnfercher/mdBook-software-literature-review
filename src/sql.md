@@ -1,4 +1,5 @@
 # SQL
+
 ## Livros
 1. [SQL Notes for Professionals book](https://books.goalkicker.com/SQLBook/)
 

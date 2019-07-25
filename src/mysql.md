@@ -1,4 +1,5 @@
 # MySQL
+
 ## Livros
 1. [MySQL Notes for Professionals book](https://books.goalkicker.com/MySQLBook/)
 

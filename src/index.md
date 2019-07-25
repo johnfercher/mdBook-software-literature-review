@@ -4,8 +4,9 @@
 
 - [Aprendendo o Zero](./from_zero.md)
     - [Python](./python.md)
-    - [C#](./csharp.md)
+    - [Go](./go.md)
     - [Java](./java.md)
+    - [C#](./csharp.md)
     - [JavaScript](./javascript.md)
         - [Node.JS](./nodejs.md)
         - [Vue.JS](./vuejs.md)
@@ -15,7 +16,6 @@
         - [HTML](./html.md)
         - [CSS](./css.md)
         - [Bootstrap](./bootstrap.md)
-    - [Go](./go.md)
     - [Kotlin](./kotlin.md)
     - [Rust](./rust.md)
     - [PHP](./php.md)

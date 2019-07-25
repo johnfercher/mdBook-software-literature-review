@@ -1,4 +1,5 @@
 # Domain-Driven Design
+
 ## Artigos
 | Título | Autor | Idioma |
 |-----------------|-------|:--------:|

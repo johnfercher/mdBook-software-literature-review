@@ -1,12 +1,13 @@
 # Go
 
 ## Artigos
-1. [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
-2. [Concurrency and Parallelism in Golang](https://medium.com/@tilaklodha/concurrency-and-parallelism-in-golang-5333e9a4ba64)
-3. [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/)
-4. [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
-5. [Go-tcha: When nil != nil ](https://dev.to/pauljlucas/go-tcha-when-nil--nil-hic)
-6. [How To Use Go Interfaces](https://blog.chewxy.com/2018/03/18/golang-interfaces/)
+1. [Esquisitices de Go: Nil != Nil e mais umas coisas](https://medium.com/@johnathanfercher/esquisitices-de-go-a52548d1334f)
+2. [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
+3. [Concurrency and Parallelism in Golang](https://medium.com/@tilaklodha/concurrency-and-parallelism-in-golang-5333e9a4ba64)
+4. [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/)
+5. [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
+6. [Go-tcha: When nil != nil ](https://dev.to/pauljlucas/go-tcha-when-nil--nil-hic)
+7. [How To Use Go Interfaces](https://blog.chewxy.com/2018/03/18/golang-interfaces/)
 
 ## Videos
 1. [Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)

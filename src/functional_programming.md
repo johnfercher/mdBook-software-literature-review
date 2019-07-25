@@ -1,4 +1,5 @@
 # Programação Funcional
+
 ## Artigos
 | Título | Autor | Idioma |
 |-----------------|-------|:--------:|

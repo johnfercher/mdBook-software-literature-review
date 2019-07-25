@@ -1,9 +1,11 @@
 # Git
+
 ## Livros
 1. [Git Notes for Professionals book](https://books.goalkicker.com/GitBook/)
 
 ## Artigos
 1. [Gitflow - A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+2. [Intro to Cherry Picking with Git](https://www.previousnext.com.au/blog/intro-cherry-picking-git)
 
 ## Podcasts
 1. [Lambda3 Podcast 124 – Fluxo de desenvolvimento com git](https://www.lambda3.com.br/2019/01/lambda3-podcast-124-fluxo-de-desenvolvimento-com-git/)
