@@ -12,6 +12,7 @@
 ## Videos
 1. [Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
 2. [Hello Rust! #9 - Go vs Rust - Concurrency and Race Conditions (race-conditions, ownership, mutex)](https://www.youtube.com/watch?v=B5xYBrxVSiE)
+3. [How Do You Structure Your Go Apps?](https://www.youtube.com/watch?v=1rxDzs0zgcE&feature=youtu.be)
 
 ## Podcasts
 1. [A linguagem Go – Hipsters #67](https://hipsters.tech/linguagem-go-hipsters-67/)
