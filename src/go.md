@@ -1,6 +1,5 @@
 # Go
 
-
 ## Artigos
 1. [Esquisitices de Go: Nil != Nil e mais umas coisas](https://medium.com/@johnathanfercher/esquisitices-de-go-a52548d1334f)
 2. [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
