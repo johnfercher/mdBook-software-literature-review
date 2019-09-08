@@ -29,8 +29,8 @@
 - [Desenvolvimento de Software](./software_development.md)     
     - [Qualidade de  Código](./code_quality.md)
     - [Orientação a Objetos](./oop.md)
-        - [SOLID](./solid.md)
-        - [Domain-Driven Design](./ddd.md)
+    - [SOLID](./solid.md)
+    - [Domain-Driven Design](./ddd.md)
     - [Design Patterns](./design_patterns.md)
         - [Criacionais](./creational.md)
         - [Estruturais](./structural.md)
@@ -38,6 +38,19 @@
     - [Testes](./tests.md)
     - [Programação Funcional](./functional_programming.md)
     
+- [APIs](./apis.md)
+    - [Padrões de Integração](./integration-patterns.md)
+    - [Microsserviços](./microservices.md)
+    - [REST](./rest.md)
+    - [GraphQL](./graphql.md)
+
+- [DevOps](./devops.md)
+    - [Docker](./docker.md)
+    - [Kubernetes](./kubernetes.md)
+    - [Linux](./linux.md)
+    - [Cloud](./cloud.md)
+    - [Ansible](./ansible.md)
+
 - [Banco de Dados](./database.md)
     - [SQL](./sql.md)
         - [MySQL](./mysql.md)
@@ -46,27 +59,14 @@
         - [OracleDB](./oracle_db.md)
     - [NoSQL](./no_sql.md)
         - [MongoDB](./mongo_db.md)
-
+        
 - [Metodologias Ágeis](./agile.md)
     - [Scrum](./scrum.md)
     - [Extreme Programming](./xp.md)
     - [Kanban](./kanban.md)
-
-- [DevOps](./devops.md)
-    - [Docker](./docker.md)
-    - [Kubernetes](./kubernetes.md)
-    - [Linux](./linux.md)
-    - [Cloud](./cloud.md)
-    - [Ansible](./ansible.md)
-    
-- [APIs](./apis.md)
-    - [REST](./rest.md)
-    - [GraphQL](./graphql.md)
-    
+       
 - [Git](./git.md)
   
-- [Microsserviços](./microservices.md)
-
 - [Algoritmos](./algorithms.md)
 
 - [Security](./security.md)

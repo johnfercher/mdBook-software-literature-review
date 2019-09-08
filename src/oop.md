@@ -6,7 +6,3 @@
 ## Videos
 1. [Should you use OOP programming in 2018?](https://www.youtube.com/watch?v=_2gHV0WeXjo)
 2. [Why OOP inheritance sucks](https://www.youtube.com/watch?v=da_Rvn0au-g)
-
-## Relacionados
-- [SOLID](./solid.md)
-- [Domain-Driven Design](./ddd.md)
