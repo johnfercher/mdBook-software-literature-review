@@ -39,7 +39,6 @@
     - [Programação Funcional](./functional_programming.md)
     
 - [APIs](./apis.md)
-    - [Padrões de Integração](./integration-patterns.md)
     - [Microsserviços](./microservices.md)
     - [REST](./rest.md)
     - [GraphQL](./graphql.md)

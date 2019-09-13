@@ -12,3 +12,7 @@
 2. [YOW! Singapore 2017 Gregor Hohpe - Enterprise Integration Patterns 2](https://www.youtube.com/watch?v=Yz8HXTFMqcE)
 3. [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
 4. [GOTO 2014 • Microservices • Martin Fowler](https://www.youtube.com/watch?v=wgdBVIX9ifA)
+5. [Enterprise Integration Patterns - Elemar Júnior](https://www.youtube.com/watch?v=yX2Nrd6tfMo)
+
+## Comunidade
+1. [Messaging Patterns](https://www.enterpriseintegrationpatterns.com)
