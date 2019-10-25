@@ -38,7 +38,8 @@
     - [Testes](./tests.md)
     - [Programação Funcional](./functional_programming.md)
     
-- [APIs](./apis.md)
+- [Integrações](./integrations.md)
+    - [Mensageria](./messaging.md)
     - [Microsserviços](./microservices.md)
     - [REST](./rest.md)
     - [GraphQL](./graphql.md)
