@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>C++ - Software Development</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Início</a></li><li class="expanded "><a href="from_zero.html"><strong aria-hidden="true">2.</strong> Aprendendo o Zero</a></li><li><ol class="section"><li class="expanded "><a href="python.html"><strong aria-hidden="true">2.1.</strong> Python</a></li><li class="expanded "><a href="go.html"><strong aria-hidden="true">2.2.</strong> Go</a></li><li class="expanded "><a href="java.html"><strong aria-hidden="true">2.3.</strong> Java</a></li><li class="expanded "><a href="csharp.html"><strong aria-hidden="true">2.4.</strong> C#</a></li><li class="expanded "><a href="javascript.html"><strong aria-hidden="true">2.5.</strong> JavaScript</a></li><li><ol class="section"><li class="expanded "><a href="nodejs.html"><strong aria-hidden="true">2.5.1.</strong> Node.JS</a></li><li class="expanded "><a href="vuejs.html"><strong aria-hidden="true">2.5.2.</strong> Vue.JS</a></li><li class="expanded "><a href="reactjs.html"><strong aria-hidden="true">2.5.3.</strong> React.JS</a></li><li class="expanded "><a href="angularjs.html"><strong aria-hidden="true">2.5.4.</strong> Angular.JS</a></li></ol></li><li class="expanded "><a href="frontend.html"><strong aria-hidden="true">2.6.</strong> Frontend</a></li><li><ol class="section"><li class="expanded "><a href="html.html"><strong aria-hidden="true">2.6.1.</strong> HTML</a></li><li class="expanded "><a href="css.html"><strong aria-hidden="true">2.6.2.</strong> CSS</a></li><li class="expanded "><a href="bootstrap.html"><strong aria-hidden="true">2.6.3.</strong> Bootstrap</a></li></ol></li><li class="expanded "><a href="kotlin.html"><strong aria-hidden="true">2.7.</strong> Kotlin</a></li><li class="expanded "><a href="rust.html"><strong aria-hidden="true">2.8.</strong> Rust</a></li><li class="expanded "><a href="php.html"><strong aria-hidden="true">2.9.</strong> PHP</a></li><li class="expanded "><a href="c.html"><strong aria-hidden="true">2.10.</strong> C</a></li><li class="expanded "><a href="cpp.html" class="active"><strong aria-hidden="true">2.11.</strong> C++</a></li><li class="expanded "><a href="haskell.html"><strong aria-hidden="true">2.12.</strong> Haskell</a></li><li class="expanded "><a href="perl.html"><strong aria-hidden="true">2.13.</strong> Perl</a></li><li class="expanded "><a href="ruby.html"><strong aria-hidden="true">2.14.</strong> Ruby</a></li><li class="expanded "><a href="r.html"><strong aria-hidden="true">2.15.</strong> R</a></li></ol></li><li class="expanded "><a href="software_development.html"><strong aria-hidden="true">3.</strong> Desenvolvimento de Software</a></li><li><ol class="section"><li class="expanded "><a href="code_quality.html"><strong aria-hidden="true">3.1.</strong> Qualidade de  Código</a></li><li class="expanded "><a href="oop.html"><strong aria-hidden="true">3.2.</strong> Orientação a Objetos</a></li><li class="expanded "><a href="solid.html"><strong aria-hidden="true">3.3.</strong> SOLID</a></li><li class="expanded "><a href="ddd.html"><strong aria-hidden="true">3.4.</strong> Domain-Driven Design</a></li><li class="expanded "><a href="design_patterns.html"><strong aria-hidden="true">3.5.</strong> Design Patterns</a></li><li><ol class="section"><li class="expanded "><a href="creational.html"><strong aria-hidden="true">3.5.1.</strong> Criacionais</a></li><li class="expanded "><a href="structural.html"><strong aria-hidden="true">3.5.2.</strong> Estruturais</a></li><li class="expanded "><a href="behavioral.html"><strong aria-hidden="true">3.5.3.</strong> Comportamentais</a></li></ol></li><li class="expanded "><a href="tests.html"><strong aria-hidden="true">3.6.</strong> Testes</a></li><li class="expanded "><a href="functional_programming.html"><strong aria-hidden="true">3.7.</strong> Programação Funcional</a></li></ol></li><li class="expanded "><a href="integrations.html"><strong aria-hidden="true">4.</strong> Integrações</a></li><li><ol class="section"><li class="expanded "><a href="messaging.html"><strong aria-hidden="true">4.1.</strong> Mensageria</a></li><li class="expanded "><a href="microservices.html"><strong aria-hidden="true">4.2.</strong> Microsserviços</a></li><li class="expanded "><a href="rest.html"><strong aria-hidden="true">4.3.</strong> REST</a></li><li class="expanded "><a href="graphql.html"><strong aria-hidden="true">4.4.</strong> GraphQL</a></li></ol></li><li class="expanded "><a href="devops.html"><strong aria-hidden="true">5.</strong> DevOps</a></li><li><ol class="section"><li class="expanded "><a href="docker.html"><strong aria-hidden="true">5.1.</strong> Docker</a></li><li class="expanded "><a href="kubernetes.html"><strong aria-hidden="true">5.2.</strong> Kubernetes</a></li><li class="expanded "><a href="linux.html"><strong aria-hidden="true">5.3.</strong> Linux</a></li><li class="expanded "><a href="cloud.html"><strong aria-hidden="true">5.4.</strong> Cloud</a></li><li class="expanded "><a href="ansible.html"><strong aria-hidden="true">5.5.</strong> Ansible</a></li></ol></li><li class="expanded "><a href="database.html"><strong aria-hidden="true">6.</strong> Banco de Dados</a></li><li><ol class="section"><li class="expanded "><a href="sql.html"><strong aria-hidden="true">6.1.</strong> SQL</a></li><li><ol class="section"><li class="expanded "><a href="mysql.html"><strong aria-hidden="true">6.1.1.</strong> MySQL</a></li><li class="expanded "><a href="postgresql.html"><strong aria-hidden="true">6.1.2.</strong> PostgreSQL</a></li><li class="expanded "><a href="sql_server.html"><strong aria-hidden="true">6.1.3.</strong> SQL Server</a></li><li class="expanded "><a href="oracle_db.html"><strong aria-hidden="true">6.1.4.</strong> OracleDB</a></li></ol></li><li class="expanded "><a href="no_sql.html"><strong aria-hidden="true">6.2.</strong> NoSQL</a></li><li><ol class="section"><li class="expanded "><a href="mongo_db.html"><strong aria-hidden="true">6.2.1.</strong> MongoDB</a></li></ol></li></ol></li><li class="expanded "><a href="agile.html"><strong aria-hidden="true">7.</strong> Metodologias Ágeis</a></li><li><ol class="section"><li class="expanded "><a href="scrum.html"><strong aria-hidden="true">7.1.</strong> Scrum</a></li><li class="expanded "><a href="xp.html"><strong aria-hidden="true">7.2.</strong> Extreme Programming</a></li><li class="expanded "><a href="kanban.html"><strong aria-hidden="true">7.3.</strong> Kanban</a></li></ol></li><li class="expanded "><a href="git.html"><strong aria-hidden="true">8.</strong> Git</a></li><li class="expanded "><a href="algorithms.html"><strong aria-hidden="true">9.</strong> Algoritmos</a></li><li class="expanded "><a href="security.html"><strong aria-hidden="true">10.</strong> Security</a></li><li class="expanded "><a href="latex.html"><strong aria-hidden="true">11.</strong> LaTeX</a></li><li class="expanded "><a href="matlab.html"><strong aria-hidden="true">12.</strong> Matlab</a></li><li class="expanded "><a href="regex.html"><strong aria-hidden="true">13.</strong> Regex</a></li><li class="expanded "><a href="lean.html"><strong aria-hidden="true">14.</strong> Lean Startup</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Software Development</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#c" id="c">C++</a></h1>
+<h2><a class="header" href="#livros" id="livros">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/CPlusPlusBook/">C++ Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#artigos" id="artigos">Artigos</a></h2>
+<ol>
+<li><a href="https://medium.com/@johnathanfercher/modern-c-development-dbe71ee5e969">Modern C++ Development - Um boilerplate para desenvolvimento em C++</a></li>
+<li><a href="https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html">A quick introduction to the Google C++ Testing Framework</a></li>
+<li><a href="https://www.codeguru.com/cpp/cpp/algorithms/using-c-with-docker-engine.html">Using C++ with Docker Engine</a></li>
+<li><a href="https://normanblancaster.wordpress.com/2017/01/31/leading-edge-c-build-environments-with-docker-and-travis-ci/">Leading Edge C++ Build Environments with Docker and Travis-CI</a></li>
+</ol>
+<h2><a class="header" href="#videos" id="videos">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=7xVrYnyQ04M&amp;t=192s">Should you Learn C++ in 2018?</a></li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="c.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="haskell.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="c.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="haskell.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

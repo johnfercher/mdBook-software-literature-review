@@ -1,0 +1,1218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Software Development</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Início</a></li><li class="expanded "><a href="from_zero.html"><strong aria-hidden="true">2.</strong> Aprendendo o Zero</a></li><li><ol class="section"><li class="expanded "><a href="python.html"><strong aria-hidden="true">2.1.</strong> Python</a></li><li class="expanded "><a href="go.html"><strong aria-hidden="true">2.2.</strong> Go</a></li><li class="expanded "><a href="java.html"><strong aria-hidden="true">2.3.</strong> Java</a></li><li class="expanded "><a href="csharp.html"><strong aria-hidden="true">2.4.</strong> C#</a></li><li class="expanded "><a href="javascript.html"><strong aria-hidden="true">2.5.</strong> JavaScript</a></li><li><ol class="section"><li class="expanded "><a href="nodejs.html"><strong aria-hidden="true">2.5.1.</strong> Node.JS</a></li><li class="expanded "><a href="vuejs.html"><strong aria-hidden="true">2.5.2.</strong> Vue.JS</a></li><li class="expanded "><a href="reactjs.html"><strong aria-hidden="true">2.5.3.</strong> React.JS</a></li><li class="expanded "><a href="angularjs.html"><strong aria-hidden="true">2.5.4.</strong> Angular.JS</a></li></ol></li><li class="expanded "><a href="frontend.html"><strong aria-hidden="true">2.6.</strong> Frontend</a></li><li><ol class="section"><li class="expanded "><a href="html.html"><strong aria-hidden="true">2.6.1.</strong> HTML</a></li><li class="expanded "><a href="css.html"><strong aria-hidden="true">2.6.2.</strong> CSS</a></li><li class="expanded "><a href="bootstrap.html"><strong aria-hidden="true">2.6.3.</strong> Bootstrap</a></li></ol></li><li class="expanded "><a href="kotlin.html"><strong aria-hidden="true">2.7.</strong> Kotlin</a></li><li class="expanded "><a href="rust.html"><strong aria-hidden="true">2.8.</strong> Rust</a></li><li class="expanded "><a href="php.html"><strong aria-hidden="true">2.9.</strong> PHP</a></li><li class="expanded "><a href="c.html"><strong aria-hidden="true">2.10.</strong> C</a></li><li class="expanded "><a href="cpp.html"><strong aria-hidden="true">2.11.</strong> C++</a></li><li class="expanded "><a href="haskell.html"><strong aria-hidden="true">2.12.</strong> Haskell</a></li><li class="expanded "><a href="perl.html"><strong aria-hidden="true">2.13.</strong> Perl</a></li><li class="expanded "><a href="ruby.html"><strong aria-hidden="true">2.14.</strong> Ruby</a></li><li class="expanded "><a href="r.html"><strong aria-hidden="true">2.15.</strong> R</a></li></ol></li><li class="expanded "><a href="software_development.html"><strong aria-hidden="true">3.</strong> Desenvolvimento de Software</a></li><li><ol class="section"><li class="expanded "><a href="code_quality.html"><strong aria-hidden="true">3.1.</strong> Qualidade de  Código</a></li><li class="expanded "><a href="oop.html"><strong aria-hidden="true">3.2.</strong> Orientação a Objetos</a></li><li class="expanded "><a href="solid.html"><strong aria-hidden="true">3.3.</strong> SOLID</a></li><li class="expanded "><a href="ddd.html"><strong aria-hidden="true">3.4.</strong> Domain-Driven Design</a></li><li class="expanded "><a href="design_patterns.html"><strong aria-hidden="true">3.5.</strong> Design Patterns</a></li><li><ol class="section"><li class="expanded "><a href="creational.html"><strong aria-hidden="true">3.5.1.</strong> Criacionais</a></li><li class="expanded "><a href="structural.html"><strong aria-hidden="true">3.5.2.</strong> Estruturais</a></li><li class="expanded "><a href="behavioral.html"><strong aria-hidden="true">3.5.3.</strong> Comportamentais</a></li></ol></li><li class="expanded "><a href="tests.html"><strong aria-hidden="true">3.6.</strong> Testes</a></li><li class="expanded "><a href="functional_programming.html"><strong aria-hidden="true">3.7.</strong> Programação Funcional</a></li></ol></li><li class="expanded "><a href="integrations.html"><strong aria-hidden="true">4.</strong> Integrações</a></li><li><ol class="section"><li class="expanded "><a href="messaging.html"><strong aria-hidden="true">4.1.</strong> Mensageria</a></li><li class="expanded "><a href="microservices.html"><strong aria-hidden="true">4.2.</strong> Microsserviços</a></li><li class="expanded "><a href="rest.html"><strong aria-hidden="true">4.3.</strong> REST</a></li><li class="expanded "><a href="graphql.html"><strong aria-hidden="true">4.4.</strong> GraphQL</a></li></ol></li><li class="expanded "><a href="devops.html"><strong aria-hidden="true">5.</strong> DevOps</a></li><li><ol class="section"><li class="expanded "><a href="docker.html"><strong aria-hidden="true">5.1.</strong> Docker</a></li><li class="expanded "><a href="kubernetes.html"><strong aria-hidden="true">5.2.</strong> Kubernetes</a></li><li class="expanded "><a href="linux.html"><strong aria-hidden="true">5.3.</strong> Linux</a></li><li class="expanded "><a href="cloud.html"><strong aria-hidden="true">5.4.</strong> Cloud</a></li><li class="expanded "><a href="ansible.html"><strong aria-hidden="true">5.5.</strong> Ansible</a></li></ol></li><li class="expanded "><a href="database.html"><strong aria-hidden="true">6.</strong> Banco de Dados</a></li><li><ol class="section"><li class="expanded "><a href="sql.html"><strong aria-hidden="true">6.1.</strong> SQL</a></li><li><ol class="section"><li class="expanded "><a href="mysql.html"><strong aria-hidden="true">6.1.1.</strong> MySQL</a></li><li class="expanded "><a href="postgresql.html"><strong aria-hidden="true">6.1.2.</strong> PostgreSQL</a></li><li class="expanded "><a href="sql_server.html"><strong aria-hidden="true">6.1.3.</strong> SQL Server</a></li><li class="expanded "><a href="oracle_db.html"><strong aria-hidden="true">6.1.4.</strong> OracleDB</a></li></ol></li><li class="expanded "><a href="no_sql.html"><strong aria-hidden="true">6.2.</strong> NoSQL</a></li><li><ol class="section"><li class="expanded "><a href="mongo_db.html"><strong aria-hidden="true">6.2.1.</strong> MongoDB</a></li></ol></li></ol></li><li class="expanded "><a href="agile.html"><strong aria-hidden="true">7.</strong> Metodologias Ágeis</a></li><li><ol class="section"><li class="expanded "><a href="scrum.html"><strong aria-hidden="true">7.1.</strong> Scrum</a></li><li class="expanded "><a href="xp.html"><strong aria-hidden="true">7.2.</strong> Extreme Programming</a></li><li class="expanded "><a href="kanban.html"><strong aria-hidden="true">7.3.</strong> Kanban</a></li></ol></li><li class="expanded "><a href="git.html"><strong aria-hidden="true">8.</strong> Git</a></li><li class="expanded "><a href="algorithms.html"><strong aria-hidden="true">9.</strong> Algoritmos</a></li><li class="expanded "><a href="security.html"><strong aria-hidden="true">10.</strong> Security</a></li><li class="expanded "><a href="latex.html"><strong aria-hidden="true">11.</strong> LaTeX</a></li><li class="expanded "><a href="matlab.html"><strong aria-hidden="true">12.</strong> Matlab</a></li><li class="expanded "><a href="regex.html"><strong aria-hidden="true">13.</strong> Regex</a></li><li class="expanded "><a href="lean.html"><strong aria-hidden="true">14.</strong> Lean Startup</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Software Development</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#início-a-hrefhttpsgithubcomjohnferchersoftware-developmentimg-srchttpsimgshieldsiogithubstarsjohnferchermdbook-software-literature-reviewsvgstylesociallabelstars-altgithub-stars-a-a-hrefindexhtmlimg-srchttpsimgshieldsiobadgelicense-mit-bluesvg-altlicense-mit-a" id="início-a-hrefhttpsgithubcomjohnferchersoftware-developmentimg-srchttpsimgshieldsiogithubstarsjohnferchermdbook-software-literature-reviewsvgstylesociallabelstars-altgithub-stars-a-a-hrefindexhtmlimg-srchttpsimgshieldsiobadgelicense-mit-bluesvg-altlicense-mit-a">Início <a href="https://github.com/johnfercher/software-development"><img src="https://img.shields.io/github/stars/johnfercher/mdBook-software-literature-review.svg?style=social&amp;label=Stars" alt="GitHub stars" /></a> <a href="index.html#"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a></a></h1>
+<ul>
+<li>
+<p><a href="./index.html">Início</a></p>
+</li>
+<li>
+<p><a href="./from_zero.html">Aprendendo o Zero</a></p>
+<ul>
+<li><a href="./python.html">Python</a></li>
+<li><a href="./go.html">Go</a></li>
+<li><a href="./java.html">Java</a></li>
+<li><a href="./csharp.html">C#</a></li>
+<li><a href="./javascript.html">JavaScript</a>
+<ul>
+<li><a href="./nodejs.html">Node.JS</a></li>
+<li><a href="./vuejs.html">Vue.JS</a></li>
+<li><a href="./reactjs.html">React.JS</a></li>
+<li><a href="./angularjs.html">Angular.JS</a></li>
+</ul>
+</li>
+<li><a href="./frontend.html">Frontend</a>
+<ul>
+<li><a href="./html.html">HTML</a></li>
+<li><a href="./css.html">CSS</a></li>
+<li><a href="./bootstrap.html">Bootstrap</a></li>
+</ul>
+</li>
+<li><a href="./kotlin.html">Kotlin</a></li>
+<li><a href="./rust.html">Rust</a></li>
+<li><a href="./php.html">PHP</a></li>
+<li><a href="./c.html">C</a></li>
+<li><a href="./cpp.html">C++</a></li>
+<li><a href="./haskell.html">Haskell</a></li>
+<li><a href="./perl.html">Perl</a></li>
+<li><a href="./ruby.html">Ruby</a></li>
+<li><a href="./r.html">R</a></li>
+</ul>
+</li>
+<li>
+<p><a href="./software_development.html">Desenvolvimento de Software</a></p>
+<ul>
+<li><a href="./code_quality.html">Qualidade de  Código</a></li>
+<li><a href="./oop.html">Orientação a Objetos</a></li>
+<li><a href="./solid.html">SOLID</a></li>
+<li><a href="./ddd.html">Domain-Driven Design</a></li>
+<li><a href="./design_patterns.html">Design Patterns</a>
+<ul>
+<li><a href="./creational.html">Criacionais</a></li>
+<li><a href="./structural.html">Estruturais</a></li>
+<li><a href="./behavioral.html">Comportamentais</a></li>
+</ul>
+</li>
+<li><a href="./tests.html">Testes</a></li>
+<li><a href="./functional_programming.html">Programação Funcional</a></li>
+</ul>
+</li>
+<li>
+<p><a href="./integrations.html">Integrações</a></p>
+<ul>
+<li><a href="./messaging.html">Mensageria</a></li>
+<li><a href="./microservices.html">Microsserviços</a></li>
+<li><a href="./rest.html">REST</a></li>
+<li><a href="./graphql.html">GraphQL</a></li>
+</ul>
+</li>
+<li>
+<p><a href="./devops.html">DevOps</a></p>
+<ul>
+<li><a href="./docker.html">Docker</a></li>
+<li><a href="./kubernetes.html">Kubernetes</a></li>
+<li><a href="./linux.html">Linux</a></li>
+<li><a href="./cloud.html">Cloud</a></li>
+<li><a href="./ansible.html">Ansible</a></li>
+</ul>
+</li>
+<li>
+<p><a href="./database.html">Banco de Dados</a></p>
+<ul>
+<li><a href="./sql.html">SQL</a>
+<ul>
+<li><a href="./mysql.html">MySQL</a></li>
+<li><a href="./postgresql.html">PostgreSQL</a></li>
+<li><a href="./sql_server.html">SQL Server</a></li>
+<li><a href="./oracle_db.html">OracleDB</a></li>
+</ul>
+</li>
+<li><a href="./no_sql.html">NoSQL</a>
+<ul>
+<li><a href="./mongo_db.html">MongoDB</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="./agile.html">Metodologias Ágeis</a></p>
+<ul>
+<li><a href="./scrum.html">Scrum</a></li>
+<li><a href="./xp.html">Extreme Programming</a></li>
+<li><a href="./kanban.html">Kanban</a></li>
+</ul>
+</li>
+<li>
+<p><a href="./git.html">Git</a></p>
+</li>
+<li>
+<p><a href="./algorithms.html">Algoritmos</a></p>
+</li>
+<li>
+<p><a href="./security.html">Security</a></p>
+</li>
+<li>
+<p><a href="./latex.html">LaTeX</a></p>
+</li>
+<li>
+<p><a href="./matlab.html">Matlab</a></p>
+</li>
+<li>
+<p><a href="./regex.html">Regex</a></p>
+</li>
+<li>
+<p><a href="./lean.html">Lean Startup</a></p>
+</li>
+</ul>
+<h1><a class="header" href="#aprendendo-o-zero" id="aprendendo-o-zero">Aprendendo o Zero</a></h1>
+<h2><a class="header" href="#artigos" id="artigos">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://pt.wikipedia.org/wiki/Estrutura_de_controle">Estrutura de controle</a></td><td>Wikipédia</td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/">Which programs are faster?</a></td><td>The Computer Language Benchmarks Game</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#podcasts" id="podcasts">Podcasts</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://devnaestrada.com.br/2015/10/30/devcast-junior-pleno-senior.html">Júnior, Pleno e Sênior</a></td><td><a href="https://devnaestrada.com.br/">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://devnaestrada.com.br/2017/04/11/seja-desenvolvedor.html">Seja Desenvolvedor</a></td><td><a href="https://devnaestrada.com.br/">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://devnaestrada.com.br/2017/08/18/habitos-do-desenvolvedor.html">Hábitos do Desenvolvedor</a></td><td><a href="https://devnaestrada.com.br/">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.lambda3.com.br/2019/01/lambda3-podcast-127-quero-ingressar-na-carreira-de-ti/?fbclid=IwAR2R7EArvxv9AZd05SlEnB7jmpMExvl_LF-e-TRXtw_sIu6-SLC_3s_ww84">Quero Ingressar na Carreira de TI</a></td><td><a href="https://www.lambda3.com.br/">Lambda 3</a></td><td align="center">:brazil:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#videos" id="videos">Videos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.youtube.com/watch?v=yrwOiqDzrBI">Programming Languages are Not Religions!</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=-W_VsLXmjJU">Top signs of an inexperienced programmer</a></td><td><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw">TechLead</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=7bE2mI4ePeU">10 Programming Languages in ONLY 15 minutes!</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=R2pIutTspQA">How to learn to code (quickly and easily!)</a></td><td><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw">TechLead</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=S8Cy8mCRaEk">How many hours of coding per day?</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=oKJz7HmrTro">Can you become a pro web developer in a year?</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=jcggB6vRUzE">Is 40 yrs too old to learn to code?</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=6qDCrDHJ00g&amp;t=842s">Learn Foundation Programming Concepts in JUST 15.49 minutes!</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=dzvRIwCbT4g">What is a &quot;senior&quot; software engineer? The difference between junior and senior engineers.)</a></td><td><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw">TechLead</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#relacionados" id="relacionados">Relacionados</a></h2>
+<ul>
+<li><a href="./python.html">Python</a></li>
+<li><a href="./csharp.html">C#</a></li>
+<li><a href="./java.html">Java</a></li>
+<li><a href="./javascript.html">JavaScript</a>
+<ul>
+<li><a href="./nodejs.html">Node.JS</a></li>
+<li><a href="./vuejs.html">Vue.JS</a></li>
+<li><a href="./reactjs.html">React.JS</a></li>
+<li><a href="./angularjs.html">Angular.JS</a></li>
+</ul>
+</li>
+<li><a href="./frontend.html">Frontend</a>
+<ul>
+<li><a href="./html.html">HTML</a></li>
+<li><a href="./css.html">CSS</a></li>
+<li><a href="./bootstrap.html">Bootstrap</a></li>
+</ul>
+</li>
+<li><a href="./go.html">Go</a></li>
+<li><a href="./kotlin.html">Kotlin</a></li>
+<li><a href="./rust.html">Rust</a></li>
+<li><a href="./php.html">PHP</a></li>
+<li><a href="./c.html">C</a></li>
+<li><a href="./cpp.html">C++</a></li>
+<li><a href="./haskell.html">Haskell</a></li>
+<li><a href="./perl.html">Perl</a></li>
+<li><a href="./ruby.html">Ruby</a></li>
+<li><a href="./r.html">R</a></li>
+</ul>
+<h1><a class="header" href="#python" id="python">Python</a></h1>
+<h2><a class="header" href="#livros" id="livros">Livros</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://books.goalkicker.com/PythonBook/">Python Notes for Professionals book</a></td><td>StackOverflow</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#cursos" id="cursos">Cursos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.udacity.com/course/introduction-to-python--ud1110">Introduction to Python Programming</a></td><td>Udacity</td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=Ozrduu2W9B8&amp;list=PL4cUxeGkcC9idu6GZ8EU_5B6WpKTdYZbK">Python 3</a></td><td>The Net Ninja</td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=n-FTlQ7Djqc&amp;list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc">Django</a></td><td>The Net Ninja</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#artigos-1" id="artigos-1">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="http://masnun.rocks/2017/04/15/interfaces-in-python-protocols-and-abcs/">Interfaces in Python: Protocols and ABCs</a></td><td>Masnun</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#podcasts-1" id="podcasts-1">Podcasts</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.lambda3.com.br/2017/09/lambda3-podcast-60-python/">Python</a></td><td><a href="https://www.lambda3.com.br/">Lambda 3</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://devnaestrada.com.br/2018/04/13/vale-a-pena-python.html">Vale a pena Python?</a></td><td><a href="https://devnaestrada.com.br/">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://hipsters.tech/python-hipsters-122/">Python</a></td><td><a href="https://hipsters.tech/">Hipsters</a></td><td align="center">:brazil:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#videos-1" id="videos-1">Videos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.youtube.com/watch?v=09WD02w5ovg">What are the Python Specializations? </a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=CwhhTr5EJsA">Should you Learn Python in 2016-17?</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#comunidade" id="comunidade">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/pythonbr">Telegram - Python Brasil</a></li>
+</ol>
+<h1><a class="header" href="#go" id="go">Go</a></h1>
+<h2><a class="header" href="#artigos-2" id="artigos-2">Artigos</a></h2>
+<ol>
+<li><a href="https://medium.com/@johnathanfercher/esquisitices-de-go-a52548d1334f">Esquisitices de Go: Nil != Nil e mais umas coisas</a></li>
+<li><a href="http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/">50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs</a></li>
+<li><a href="https://medium.com/@tilaklodha/concurrency-and-parallelism-in-golang-5333e9a4ba64">Concurrency and Parallelism in Golang</a></li>
+<li><a href="https://peter.bourgon.org/go-for-industrial-programming/">Go for Industrial Programming</a></li>
+<li><a href="https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1">Standard Package Layout</a></li>
+<li><a href="https://blog.chewxy.com/2018/03/18/golang-interfaces/">How To Use Go Interfaces</a></li>
+<li><a href="https://medium.com/@johnathanfercher/creating-pdfs-using-golang-98b722e99d6d">Creating PDFs using Golang</a></li>
+<li><a href="https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html">Context Package Semantics In Go</a></li>
+</ol>
+<h2><a class="header" href="#videos-2" id="videos-2">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=f6kdp27TYZs">Google I/O 2012 - Go Concurrency Patterns</a></li>
+<li><a href="https://www.youtube.com/watch?v=B5xYBrxVSiE">Hello Rust! #9 - Go vs Rust - Concurrency and Race Conditions (race-conditions, ownership, mutex)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1rxDzs0zgcE&amp;feature=youtu.be">How Do You Structure Your Go Apps?</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-2" id="podcasts-2">Podcasts</a></h2>
+<ol>
+<li><a href="https://hipsters.tech/linguagem-go-hipsters-67/">A linguagem Go – Hipsters #67</a></li>
+</ol>
+<h2><a class="header" href="#cursos-1" id="cursos-1">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=SonwZ6MF5BE">Golang REST API With Mux</a></li>
+</ol>
+<h2><a class="header" href="#comunidade-1" id="comunidade-1">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/go_br">Telegram - GoBr</a></li>
+<li><a href="https://peter.bourgon.org/articles/">Peter Bourgon - Blog</a></li>
+<li><a href="https://gokit.io/">Go kit - A toolkit for microservices</a></li>
+</ol>
+<h1><a class="header" href="#java" id="java">Java</a></h1>
+<h2><a class="header" href="#livros-1" id="livros-1">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/JavaBook/">Java Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/HibernateBook/">Hibernate Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/SpringFrameworkBook/">Spring Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#videos-3" id="videos-3">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=nH9AhuxUWMM">Should you Learn Java in 2018?</a></li>
+</ol>
+<h1><a class="header" href="#c" id="c">C#</a></h1>
+<h2><a class="header" href="#livros-2" id="livros-2">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/CSharpBook/">C# Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/EntityFrameworkBook/">EntityFramework Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-3" id="podcasts-3">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2018/04/lambda3-podcast-90-net-core-2-1-asp-net-core-net-standard-2-1-e-ef-2-1/">Lambda3 Podcast 90 – .NET Core 2.1, ASP.NET Core, .NET Standard 2.1 e EF 2.1</a></li>
+</ol>
+<h2><a class="header" href="#videos-4" id="videos-4">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=9AanLhqQkAQ">Should you learn C# in 2017?</a></li>
+</ol>
+<h1><a class="header" href="#javascript" id="javascript">JavaScript</a></h1>
+<h2><a class="header" href="#livros-3" id="livros-3">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/JavaScriptBook/">JavaScript Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/jQueryBook/">jQuery Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-4" id="podcasts-4">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2018/06/lambda3-podcast-100-estou-comecando-agora-com-javascript/">Lambda3 Podcast 100 – Estou começando agora com Javascript</a></li>
+<li><a href="https://www.lambda3.com.br/2017/08/lambda3-podcast-58-javascript/">Lambda3 Podcast 58 – JavaScript</a></li>
+</ol>
+<h2><a class="header" href="#cursos-2" id="cursos-2">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-javascript?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-javascript">Jornada do Dev: Curso completo de Javascript</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-jquery?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-jquery">Jornada do Dev: Curso completo de jQuery</a></li>
+<li><a href="https://www.youtube.com/watch?v=qoSksQ4s_hg&amp;list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET">The Net Ninja: JavaScript</a></li>
+<li><a href="https://www.youtube.com/watch?v=0Mp2kwE8xY0&amp;list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml">The Net Ninja: JavaSCript ES6</a></li>
+<li><a href="https://www.youtube.com/watch?v=jVe1GBCqFIE&amp;list=PL4cUxeGkcC9hNUJ0j6ccnOAcJIPoTRpO4">The Net Ninja: jQuery</a></li>
+</ol>
+<h2><a class="header" href="#relacionados-1" id="relacionados-1">Relacionados</a></h2>
+<ul>
+<li><a href="./nodejs.html">Node.JS</a></li>
+<li><a href="./reactjs.html">React.JS</a></li>
+<li><a href="./angularjs.html">Angular.JS</a></li>
+<li><a href="./vuejs.html">Vue.JS</a></li>
+</ul>
+<h1><a class="header" href="#nodejs" id="nodejs">Node.JS</a></h1>
+<h2><a class="header" href="#livros-4" id="livros-4">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/NodeJSBook/">Node.js Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-5" id="podcasts-5">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2016/07/podcast-7-nodejs/">Lambda3 Podcast 7 – Node.js</a></li>
+</ol>
+<h2><a class="header" href="#cursos-3" id="cursos-3">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-nodejs?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-nodejs">Jornada do Dev: Curso de NodeJS</a></li>
+<li><a href="https://www.youtube.com/watch?v=w-7RQ46RgxU&amp;list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp">The Net Ninja: Node.JS</a></li>
+<li><a href="https://www.youtube.com/watch?v=9OPP_1eAENg&amp;list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u">The Net Ninja: MongoDB + Node.JS</a></li>
+<li><a href="https://www.youtube.com/watch?v=sakQbeRjgwg&amp;list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x">The Net Ninja: Passport.JS</a></li>
+<li><a href="https://www.youtube.com/watch?v=BRdcRFvuqsE&amp;list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8">The Net Ninja: REST API</a></li>
+<li><a href="https://www.youtube.com/watch?v=r6I-Ahc0HB4&amp;list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD">The Net Ninja: Regex</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y0lDGjwRYKw&amp;list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f">The Net Ninja: GraphQL API</a></li>
+</ol>
+<h2><a class="header" href="#videos-5" id="videos-5">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=ahXOaHv9XYo">Should you Learn Node js in 2017?</a></li>
+</ol>
+<h1><a class="header" href="#vuejs" id="vuejs">Vue.JS</a></h1>
+<h2><a class="header" href="#cursos-4" id="cursos-4">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=5LYrN_cAJoA&amp;list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa">The Net Ninja: Vue.JS 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=BGAu__J4xoc&amp;list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2">The Net Ninja: Vuex</a></li>
+<li><a href="https://www.youtube.com/watch?v=KeFdy1kVH4A&amp;list=PL4cUxeGkcC9iCKx06qSncuvEPZ7x1UnKD">The Net Ninja: Vue.JS 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=2uZYKcKHgU0&amp;list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5">The Net Ninja: Vuetify</a></li>
+<li><a href="https://www.youtube.com/watch?v=nWBtU2QNhxk&amp;list=PL4cUxeGkcC9i2TdO1NqDg0KigL-WkL4Vl">The Net Ninja: Real-time Chat Vue + Firebase</a></li>
+</ol>
+<h1><a class="header" href="#reactjs" id="reactjs">React.JS</a></h1>
+<h2><a class="header" href="#livros-5" id="livros-5">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/ReactJSBook/">React JS Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/ReactNativeBook/">React Native Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-5" id="cursos-5">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=yZ0f1Apb5CU&amp;list=PL4cUxeGkcC9i0_2FF-WhtRIfIJ1lXlTZR">The Net Ninja: React</a></li>
+<li><a href="https://www.youtube.com/watch?v=OxIDLw0M-m0&amp;list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG">The Net Ninja: Complete React</a></li>
+</ol>
+<h1><a class="header" href="#angularjs" id="angularjs">Angular.JS</a></h1>
+<h2><a class="header" href="#cursos-6" id="cursos-6">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-angularjs?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-angularjs">Jornada do Dev: Curso de AngularJS</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-angular-2?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-angular-2">Jornada do Dev: Curso de Angular 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=FlUCU13dJyo&amp;list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v">The Net Ninja: AngularJS</a></li>
+<li><a href="https://www.youtube.com/watch?v=DwTNR3EBSJQ&amp;list=PL4cUxeGkcC9jqhk5RvBiEwHMKSUXPyng0">The Net Ninja: Angular 2</a></li>
+</ol>
+<h1><a class="header" href="#frontend" id="frontend">Frontend</a></h1>
+<h2><a class="header" href="#relacionados-2" id="relacionados-2">Relacionados</a></h2>
+<ul>
+<li><a href="./html.html">HTML</a></li>
+<li><a href="./css.html">CSS</a></li>
+<li><a href="./bootstrap.html">Bootstrap</a></li>
+</ul>
+<h2><a class="header" href="#frameworks-javascript" id="frameworks-javascript">Frameworks JavaScript</a></h2>
+<ul>
+<li><a href="./vuejs.html">Vue.JS</a></li>
+<li><a href="./reactjs.html">React.JS</a></li>
+<li><a href="./angularjs.html">Angular.JS</a></li>
+</ul>
+<h1><a class="header" href="#html" id="html">HTML</a></h1>
+<h2><a class="header" href="#livros-6" id="livros-6">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/HTML5Book/">HTML5 Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/HTML5CanvasBook/">HTML5 Canvas Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-7" id="cursos-7">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/aprenda-html-em-1-hora?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=aprenda-html-em-1-hora">Jornada do Dev: Aprenda HTML em 1 hora</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-html-5?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-html-5">Jornada do Dev: Curso completo de HTML 5</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y1BlT4_c_SU&amp;list=PL4cUxeGkcC9ibZ2TSBaGGNrgh4ZgYE6Cc">The Net Ninja: HTML</a></li>
+</ol>
+<h1><a class="header" href="#css" id="css">CSS</a></h1>
+<h2><a class="header" href="#livros-7" id="livros-7">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/CSSBook/">CSS Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-8" id="cursos-8">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-css-3?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-css-3">Jornada do Dev: Curso Completo de CSS 3</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-css?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-css">Jornada do Dev: Curso de CSS</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-less?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-less">Jornada do Dev: Curso de Less</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-sass?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-sass">Jornada do Dev: Curso de Sass</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-css3-com-sass-e-compass?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-css3-com-sass-e-compass">Jornada do Dev: Curso de CSS3 com Sass e Compass</a></li>
+<li><a href="https://www.youtube.com/watch?v=I9XRrlOOazo&amp;list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT">The Net Ninja: CSS</a></li>
+<li><a href="https://www.youtube.com/watch?v=7ZXsPj43heo&amp;list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh">The Net Ninja: CSS Positioning</a></li>
+<li><a href="https://www.youtube.com/watch?v=jgw82b5Y2MU&amp;list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5">The Net Ninja: CSS Animatioon</a></li>
+<li><a href="https://www.youtube.com/watch?v=St5B7hnMLjg&amp;list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA">The Net Ninja: SASS</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y8zMYaD1bz0&amp;list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG">The Net Ninja: Flexbox</a></li>
+<li><a href="https://www.youtube.com/watch?v=x7tLPhnA06w&amp;list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY">The Net Ninja: CSS Grid</a></li>
+</ol>
+<h1><a class="header" href="#bootstrap" id="bootstrap">Bootstrap</a></h1>
+<h2><a class="header" href="#cursos-9" id="cursos-9">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-bootstrap-30?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-bootstrap-30">Jornada do Dev: Curso de Bootstrap</a></li>
+<li><a href="https://www.youtube.com/watch?v=xvfm7IpEkBk&amp;list=PL4cUxeGkcC9g_69kOfXICzT_hZ79_td99">The Net Ninja: Bootstrap 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=QAgrHLtG1Yk&amp;list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv">The Net Ninja: Bootstrap 4</a></li>
+</ol>
+<h1><a class="header" href="#kotlin" id="kotlin">Kotlin</a></h1>
+<h2><a class="header" href="#livros-8" id="livros-8">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/KotlinBook/">Kotlin Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#rust" id="rust">Rust</a></h1>
+<h2><a class="header" href="#podcasts-6" id="podcasts-6">Podcasts</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.lambda3.com.br/2017/10/lambda3-podcast-66-rust/">Podcast 66 – Rust</a></td><td><a href="https://www.lambda3.com.br/">Lambda 3</a></td><td align="center">:brazil:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#artigos-3" id="artigos-3">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://theburningmonk.com/2015/05/rust-memory-safety-without-gc/">Rust – memory safety without garbage collector</a></td><td><a href="https://theburningmonk.com/">The Burning Monk</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://manishearth.github.io/blog/2015/05/30/how-rust-achieves-thread-safety/">How Rust Achieves Thread Safety</a></td><td><a href="https://manishearth.github.io/">Manish Goregaokar’s blog</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#livros-9" id="livros-9">Livros</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.casadocodigo.com.br/products/livro-rust">Rust: Concorrência e alta performance com segurança</a></td><td><a href="https://www.casadocodigo.com.br">Casa do Código</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.casadocodigo.com.br/products/livro-rust-funcional-concorrente">Programação Funcional e Concorrente em Rust</a></td><td><a href="https://www.casadocodigo.com.br">Casa do Código</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.amazon.com/Programming-Rust-Fast-Systems-Development/dp/1491927283">Programming Rust: Fast, Safe Systems Development</a></td><td>Jim Blandy</td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.amazon.com/Hands-Functional-Programming-Rust-applications-ebook/dp/B07C5S4729">Hands-On Functional Programming in Rust:</a></td><td>Andrew Johnson</td><td align="center">:us:</td></tr>
+<tr><td><a href="https://doc.rust-lang.org/rust-by-example/">Rust By Example</a></td><td>Rust Community</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#videos-6" id="videos-6">Videos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.youtube.com/watch?v=8EPsnf_ZYU0">Rust and the Future of Systems Programming</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=cNeIOt8ZdAY">Unlocking the Power of Parallelism with Rust</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=FfoXFnzZbBM">Rust for Web Developers</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=P3sfNGtpuxc">Safe Systems Programming with Rust</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=duv0tuPAnO0">Growing the Rust Community</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=2RhbYpgVpg0">Putting Rust into Production at Mozilla</a></td><td><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=h98Xk9aHAd4">Should you Learn Rust For Web Development?</a></td><td><a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q">Stefan Mischook</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=B5xYBrxVSiE">Go vs Rust - Concurrency and Race Conditions (race-conditions, ownership, mutex)</a></td><td><a href="https://www.youtube.com/channel/UCZ_EWaQZCZuGGfnuqUoHujw">Hello Rust!</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=HgtRAbE1nBM">Is It Time to Rewrite the Operating System in Rust?</a></td><td><a href="https://www.youtube.com/channel/UCkQX1tChV7Z7l1LFF4L9j_g">InfoQ</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#cursos-10" id="cursos-10">Cursos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.pluralsight.com/courses/rust-fundamentals">Rust Fundamentals</a></td><td><a href="https://www.pluralsight.com">Pluralsight</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#comunidade-2" id="comunidade-2">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/rustlangbr">Rust Brasil</a></li>
+<li><a href="https://www.reddit.com/r/rust/">Reddit Rust</a></li>
+<li><a href="https://www.youtube.com/channel/UCZ_EWaQZCZuGGfnuqUoHujw">Hello Rust!</a></li>
+</ol>
+<h2><a class="header" href="#eventos" id="eventos">Eventos</a></h2>
+<ol>
+<li><a href="https://rustconf.com/">Rust Conference</a></li>
+<li><a href="https://rustfest.eu">Rust Fest</a></li>
+<li><a href="https://rustlatam.org/">Rust LATAM</a></li>
+</ol>
+<h1><a class="header" href="#php" id="php">PHP</a></h1>
+<h2><a class="header" href="#livros-10" id="livros-10">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/PHPBook/">PHP Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-11" id="cursos-11">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-php-para-inciantes?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-php-para-inciantes">Jornada do Dev: Curso de PHP para inciantes</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-php?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-php">Jornada do Dev: Curso completo de PHP</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-laravel-com-access-control-list-acl?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-laravel-com-access-control-list-acl">Jornada do Dev: Curso de Laravel com Access Control List (ACL)</a></li>
+<li><a href="https://www.youtube.com/watch?v=pWG7ajC_OVo&amp;list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o">The net Ninja: PHP</a></li>
+</ol>
+<h1><a class="header" href="#c-1" id="c-1">C</a></h1>
+<h2><a class="header" href="#livros-11" id="livros-11">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/CBook/">C Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#c-2" id="c-2">C++</a></h1>
+<h2><a class="header" href="#livros-12" id="livros-12">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/CPlusPlusBook/">C++ Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#artigos-4" id="artigos-4">Artigos</a></h2>
+<ol>
+<li><a href="https://medium.com/@johnathanfercher/modern-c-development-dbe71ee5e969">Modern C++ Development - Um boilerplate para desenvolvimento em C++</a></li>
+<li><a href="https://www.ibm.com/developerworks/aix/library/au-googletestingframework.html">A quick introduction to the Google C++ Testing Framework</a></li>
+<li><a href="https://www.codeguru.com/cpp/cpp/algorithms/using-c-with-docker-engine.html">Using C++ with Docker Engine</a></li>
+<li><a href="https://normanblancaster.wordpress.com/2017/01/31/leading-edge-c-build-environments-with-docker-and-travis-ci/">Leading Edge C++ Build Environments with Docker and Travis-CI</a></li>
+</ol>
+<h2><a class="header" href="#videos-7" id="videos-7">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=7xVrYnyQ04M&amp;t=192s">Should you Learn C++ in 2018?</a></li>
+</ol>
+<h1><a class="header" href="#haskell" id="haskell">Haskell</a></h1>
+<h2><a class="header" href="#livros-13" id="livros-13">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/HaskellBook/">Haskell Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#perl" id="perl">Perl</a></h1>
+<h2><a class="header" href="#livros-14" id="livros-14">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/PerlBook/">Perl Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#ruby" id="ruby">Ruby</a></h1>
+<h2><a class="header" href="#livros-15" id="livros-15">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/RubyBook/">Ruby Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/RubyOnRailsBook/">Ruby on Rails Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-12" id="cursos-12">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-ruby?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-ruby">Jornada do Dev: Curso de Ruby</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-ruby-rails?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-ruby-rails">Jornada do Dev: Curso de Ruby on Rails</a></li>
+</ol>
+<h1><a class="header" href="#r" id="r">R</a></h1>
+<h2><a class="header" href="#livros-16" id="livros-16">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/RBook/">R Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#desenvolvimento-de-software" id="desenvolvimento-de-software">Desenvolvimento de Software</a></h1>
+<h2><a class="header" href="#relacionados-3" id="relacionados-3">Relacionados</a></h2>
+<ul>
+<li><a href="./code_quality.html">Qualidade de  Código</a></li>
+<li><a href="./oop.html">Orientação a Objetos</a></li>
+<li><a href="./solid.html">SOLID</a></li>
+<li><a href="./ddd.html">Domain-Driven Design</a></li>
+<li><a href="./design_patterns.html">Design Patterns</a>
+<ul>
+<li><a href="./creational.html">Criacionais</a></li>
+<li><a href="./structural.html">Estruturais</a></li>
+<li><a href="./behavioral.html">Comportamentais</a></li>
+</ul>
+</li>
+<li><a href="./tests.html">Testes</a></li>
+<li><a href="./functional_programming.html">Programação Funcional</a></li>
+</ul>
+<h1><a class="header" href="#qualidade-de--código" id="qualidade-de--código">Qualidade de  Código</a></h1>
+<h2><a class="header" href="#artigos-5" id="artigos-5">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://sourcemaking.com/refactoring/smells">Code Smells</a></td><td><a href="https://sourcemaking.com">SourceMaking</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="http://blog.caelum.com.br/o-que-e-modelo-anemico-e-por-que-fugir-dele/">O que é Modelo Anêmico? E por que fugir dele?</a></td><td><a href="http://blog.caelum.com.br">Blog Caelum</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.martinfowler.com/bliki/AnemicDomainModel.html">AnemicDomainModel</a></td><td><a href="https://www.martinfowler.com">Martin Fowler</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://codingjourneyman.com/2015/03/23/tell-dont-ask-principle/">Tell Don’t Ask Principle</a></td><td><a href="https://codingjourneyman.com">Coding Journey Man</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#videos-8" id="videos-8">Videos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.youtube.com/watch?v=1IHNc-_u7OI">Palestra Clean Code (Código Limpo)</a></td><td><a href="https://www.youtube.com/channel/UCB7gSpCPD0kkyL6LBQWbaGw">Ti Show</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=MTCYhbfSAuA">Software Anti-Patterns: How to destroy a codebase for developers</a></td><td><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw">TechLead</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#livros-17" id="livros-17">Livros</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code</a></td><td>Robert C. Martin</td><td align="center">:us: :brazil:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#podcasts-7" id="podcasts-7">Podcasts</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.lambda3.com.br/2017/01/podcast-28-lidando-com-legados/">Lidando com legados</a></td><td><a href="https://www.lambda3.com.br">Lambda 3</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://devnaestrada.com.br/2018/08/17/sistemas-legados.html">Sistemas Legados</a></td><td><a href="https://devnaestrada.com.br">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://devnaestrada.com.br/2018/05/04/code-review.html">Code Review</a></td><td><a href="https://devnaestrada.com.br">Dev na Estrada</a></td><td align="center">:brazil:</td></tr>
+</tbody></table>
+<h1><a class="header" href="#orientação-a-objetos" id="orientação-a-objetos">Orientação a Objetos</a></h1>
+<h2><a class="header" href="#podcasts-8" id="podcasts-8">Podcasts</a></h2>
+<ol>
+<li><a href="https://hipsters.tech/praticas-de-orientacao-a-objetos-hipsters-129/">Práticas de Orientação a Objetos – Hipsters #129</a></li>
+</ol>
+<h2><a class="header" href="#videos-9" id="videos-9">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=_2gHV0WeXjo">Should you use OOP programming in 2018?</a></li>
+<li><a href="https://www.youtube.com/watch?v=da_Rvn0au-g">Why OOP inheritance sucks</a></li>
+</ol>
+<h1><a class="header" href="#solid" id="solid">SOLID</a></h1>
+<h2><a class="header" href="#videos-10" id="videos-10">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=Q2QdkiX6p_Y">SOLID - Teoria e Prática (Eduardo Pires)</a></li>
+<li><a href="https://www.youtube.com/watch?v=TMuno5RZNeE">Bob Martin SOLID Principles of Object Oriented and Agile Design</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-9" id="podcasts-9">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2019/01/lambda3-podcast-126-principios-solid/?fbclid=IwAR38rwn26kAI0W7Qdpo2CpM3xvIAPfQCYk8NG75jVgeI78CPyrtnN2K-fiQ">Lambda3 Podcast 126 – Princípios SOLID</a></li>
+</ol>
+<h2><a class="header" href="#artigos-6" id="artigos-6">Artigos</a></h2>
+<ol>
+<li><a href="https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf">Design Principles and Design Patterns</a></li>
+<li><a href="https://www.cs.cmu.edu/%7Ewing/publications/LiskovWing94.pdf">A Behavioral Notion of Subtyping</a></li>
+</ol>
+<h1><a class="header" href="#domain-driven-design" id="domain-driven-design">Domain-Driven Design</a></h1>
+<h2><a class="header" href="#artigos-7" id="artigos-7">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.infoq.com/br/articles/onion-architecture">Construindo uma arquitetura corporativa de alto nível com a Onion Architecture </a></td><td><a href="https://www.infoq.com">InfoQ - Marcelo Maico</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="http://www.agileandart.com/2010/07/16/ddd-introducao-a-domain-driven-design/">DDD – Introdução a Domain Driven Design</a></td><td><a href="http://www.agileandart.com">AgileAndArt</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://robsoncastilho.com.br/2014/02/04/sobre-camadas-cebolas-e-hexagonos/">Sobre camadas, cebolas e hexágonos…</a></td><td><a href="https://robsoncastilho.com.br">Robson Castilho</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.culttt.com/2014/11/12/domain-model-domain-driven-design/">What is the Domain Model in Domain Driven Design?</a></td><td><a href="https://www.culttt.com">Culttt</a></td><td align="center">:us:</td></tr>
+<tr><td><a href="https://martinfowler.com/bliki/BoundedContext.html">BoundedContext</a></td><td><a href="https://martinfowler.com">Martin Fowler</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#livros-18" id="livros-18">Livros</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.amazon.com.br/Domain-Driven-Design-Eric-Evans/dp/8550800651/ref=pd_cp_14_1/143-3567012-6986025?_encoding=UTF8&amp;pd_rd_i=8550800651&amp;pd_rd_r=72c9a238-12dd-11e9-b796-5bf68f3098c8&amp;pd_rd_w=HSLLG&amp;pd_rd_wg=pJC0S&amp;pf_rd_p=2e20b0cf-6ffb-46a2-91ee-4f50ae0a3468&amp;pf_rd_r=HYD8BKMB2S3YY3XAF9QH&amp;psc=1&amp;refRID=HYD8BKMB2S3YY3XAF9QH">Domain-Driven Design - Atacando as Complexidades no Coração do Software</a></td><td>Eric Evans</td><td align="center">:brazil: :us:</td></tr>
+<tr><td><a href="https://www.amazon.com.br/Implementando-Domain-Driven-design-Vernon/dp/8576089521/ref=pd_sim_14_1/143-3567012-6986025?_encoding=UTF8&amp;pd_rd_i=8576089521&amp;pd_rd_r=781428c3-12dd-11e9-a193-95547270b610&amp;pd_rd_w=CDrLQ&amp;pd_rd_wg=8huCM&amp;pf_rd_p=d515db61-e263-47cd-b9d9-b33c1db68903&amp;pf_rd_r=4SNBJT8GAFXC9D34V522&amp;psc=1&amp;refRID=4SNBJT8GAFXC9D34V522">Implementando Domain-Driven Design</a></td><td>Vernon Vaughn</td><td align="center">:brazil: :us:</td></tr>
+<tr><td><a href="https://www.amazon.com.br/Patterns-Principles-Practices-Domain-Driven-Design/dp/1118714709">Patterns, Principles, and Practices of Domain–Driven Design</a></td><td>Scott Millett</td><td align="center">:brazil: :us:</td></tr>
+<tr><td><a href="https://www.infoq.com/minibooks/domain-driven-design-quickly">Domain Driven Design Quickly</a></td><td><a href="https://www.infoq.com">InfoQ</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#podcasts-10" id="podcasts-10">Podcasts</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.lambda3.com.br/2016/10/podcast-14-domain-driven-design/">Domain Driven Design</a></td><td><a href="https://www.lambda3.com.br/">Lambda 3</a></td><td align="center">:brazil:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#videos-11" id="videos-11">Videos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://www.youtube.com/watch?v=bsDwFWuFveo">Domain Driven Design (DDD)</a></td><td>Daniel Cukier</td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://www.infoq.com/presentations/model-to-work-evans">DDD: putting the model to work</a></td><td>Eric Evans</td><td align="center">:us:</td></tr>
+<tr><td><a href="https://www.infoq.com/presentations/strategic-design-evans">Eric Evans on DDD: Strategic Design </a></td><td>Eric Evans</td><td align="center">:us:</td></tr>
+</tbody></table>
+<h2><a class="header" href="#comunidade-3" id="comunidade-3">Comunidade</a></h2>
+<ol>
+<li><a href="http://dddcommunity.org/">DDD Community</a></li>
+<li><a href="https://domainlanguage.com/">Domain Language</a> </li>
+</ol>
+<h1><a class="header" href="#design-patterns" id="design-patterns">Design Patterns</a></h1>
+<h2><a class="header" href="#relacionados-4" id="relacionados-4">Relacionados</a></h2>
+<ul>
+<li><a href="./creational.html">Criacionais</a></li>
+<li><a href="./structural.html">Estruturais</a></li>
+<li><a href="./behavioral.html">Comportamentais</a></li>
+</ul>
+<h1><a class="header" href="#criacionais" id="criacionais">Criacionais</a></h1>
+<h2><a class="header" href="#factory" id="factory">Factory</a></h2>
+<h3><a class="header" href="#artigos-8" id="artigos-8">Artigos</a></h3>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/factory_method">SourceMaking - Factory Method</a></li>
+</ol>
+<h3><a class="header" href="#videos-12" id="videos-12">Videos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=EcFVTgRHJLM">Factory Method Pattern – Design Patterns (ep 4)</a></li>
+</ol>
+<h2><a class="header" href="#abstract-factory" id="abstract-factory">Abstract Factory</a></h2>
+<h3><a class="header" href="#artigos-9" id="artigos-9">Artigos</a></h3>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/abstract_factory">SourceMaking - Abstract Factory</a></li>
+</ol>
+<h3><a class="header" href="#videos-13" id="videos-13">Videos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=v-GiuMmsXj4">Abstract Factory Pattern – Design Patterns (ep 5)</a></li>
+</ol>
+<h2><a class="header" href="#others" id="others">Others</a></h2>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/prototype">SourceMaking - Prototype</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/builder">SourceMaking - Builder</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/singleton">SourceMaking - Singleton</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/object_pool">SourceMaking - Object Pool</a></li>
+</ol>
+<h1><a class="header" href="#estruturais" id="estruturais">Estruturais</a></h1>
+<h2><a class="header" href="#decorator" id="decorator">Decorator</a></h2>
+<h3><a class="header" href="#artigos-10" id="artigos-10">Artigos</a></h3>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/decorator">SourceMaking - Decorator</a></li>
+</ol>
+<h3><a class="header" href="#videos-14" id="videos-14">Videos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=GCraGHx6gso">Decorator Pattern – Design Patterns (ep 3)</a></li>
+</ol>
+<h2><a class="header" href="#others-1" id="others-1">Others</a></h2>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/adapter">SourceMaking - Adapter</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/bridge">SourceMaking - Bridge</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/composite">SourceMaking - Composite</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/proxy">SourceMaking - Proxy</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/facade">SourceMaking - Facade</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/private_class_data">SourceMaking - Private Class Data</a></li>
+</ol>
+<h1><a class="header" href="#comportamentais" id="comportamentais">Comportamentais</a></h1>
+<h2><a class="header" href="#strategy" id="strategy">Strategy</a></h2>
+<h3><a class="header" href="#artigos-11" id="artigos-11">Artigos</a></h3>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/strategy">SourceMaking - Strategy</a></li>
+</ol>
+<h3><a class="header" href="#videos-15" id="videos-15">Videos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=v9ejT8FO-7I">Christopher Okhravi - Strategy Pattern – Design Patterns (ep 1)</a></li>
+</ol>
+<h2><a class="header" href="#observer" id="observer">Observer</a></h2>
+<h3><a class="header" href="#artigos-12" id="artigos-12">Artigos</a></h3>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/observer">SourceMaking - Observer</a></li>
+</ol>
+<h3><a class="header" href="#videos-16" id="videos-16">Videos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=_BpmfnqjgzQ">Observer Pattern – Design Patterns (ep 2)</a></li>
+</ol>
+<h2><a class="header" href="#others-2" id="others-2">Others</a></h2>
+<ol>
+<li><a href="https://sourcemaking.com/design_patterns/chain_of_responsibility">SourceMaking - Chain of Responsability</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/command">SourceMaking - Command</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/interpreter">SourceMaking - Interpreter</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/iterator">SourceMaking - Iterator</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/mediator">SourceMaking - Mediator</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/memento">SourceMaking - Memento</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/null_object">SourceMaking - Null Object</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/visitor">SourceMaking - Visitor</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/state">SourceMaking - State</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/template_method">SourceMaking - Template Method</a></li>
+</ol>
+<h1><a class="header" href="#testes" id="testes">Testes</a></h1>
+<h1><a class="header" href="#programação-funcional" id="programação-funcional">Programação Funcional</a></h1>
+<h2><a class="header" href="#artigos-13" id="artigos-13">Artigos</a></h2>
+<table><thead><tr><th>Título</th><th>Autor</th><th align="center">Idioma</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/lambda-study-group/dicionario-termos-funcionais">Dicionário de Termos</a></td><td><a href="https://github.com/lambda-study-group">Lambda Study Group</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://medium.com/@julianoalves/functors-applicatives-e-monads-explicados-com-desenhos-2c45d5db7d25">Functors, Applicatives e Monads explicados com desenhos</a></td><td><a href="https://medium.com/@julianoalves">Juliano Alves</a></td><td align="center">:brazil:</td></tr>
+<tr><td><a href="https://medium.com/@naveenkumarmuguda/railway-oriented-programming-a-powerful-functional-programming-pattern-ab454e467f31">Railway Oriented Programming: A powerful Functional Programming pattern</a></td><td><a href="https://medium.com/@naveenkumarmuguda">Naveenkumar Muguda</a></td><td align="center">:us:</td></tr>
+</tbody></table>
+<h1><a class="header" href="#integrações" id="integrações">Integrações</a></h1>
+<h2><a class="header" href="#livros-19" id="livros-19">Livros</a></h2>
+<ol>
+<li><a href="https://www.amazon.com.br/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683">Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions</a></li>
+</ol>
+<h2><a class="header" href="#videos-17" id="videos-17">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=Yz8HXTFMqcE">YOW! Singapore 2017 Gregor Hohpe - Enterprise Integration Patterns 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=yX2Nrd6tfMo">Enterprise Integration Patterns - Elemar Júnior</a></li>
+</ol>
+<h2><a class="header" href="#comunidade-4" id="comunidade-4">Comunidade</a></h2>
+<ol>
+<li><a href="https://www.enterpriseintegrationpatterns.com">Enterprise Integration Patterns</a></li>
+</ol>
+<h2><a class="header" href="#relacionados-5" id="relacionados-5">Relacionados</a></h2>
+<ul>
+<li><a href="./messaging.html">Mensageria</a></li>
+<li><a href="./microservices.html">Microsserviços</a></li>
+<li><a href="./rest.html">REST</a></li>
+<li><a href="./graphql.html">GraphQL</a></li>
+</ul>
+<h1><a class="header" href="#mensageria" id="mensageria">Mensageria</a></h1>
+<h2><a class="header" href="#videos-18" id="videos-18">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=LX19wk2B5Ak">Apache Kafka: Trabalhando com Mensageria e Real Time</a></li>
+</ol>
+<h1><a class="header" href="#microsserviços" id="microsserviços">Microsserviços</a></h1>
+<h2><a class="header" href="#artigos-14" id="artigos-14">Artigos</a></h2>
+<ol>
+<li><a href="https://dzone.com/articles/how-integration-patterns-impact-your-microservices">How Integration Patterns Impact Your Microservices Architecture </a></li>
+<li><a href="https://martinfowler.com/articles/microservice-trade-offs.html">Microservice Trade-Offs</a></li>
+</ol>
+<h2><a class="header" href="#videos-19" id="videos-19">Videos</a></h2>
+<ol>
+<li><a href="https://aradhye.com/principles-for-microservices-integration/">Principles for microservices integration</a></li>
+<li><a href="https://www.youtube.com/watch?v=CZ3wIuvmHeM">Mastering Chaos - A Netflix Guide to Microservices</a></li>
+<li><a href="https://www.youtube.com/watch?v=wgdBVIX9ifA">GOTO 2014 • Microservices • Martin Fowler</a></li>
+</ol>
+<h1><a class="header" href="#rest" id="rest">REST</a></h1>
+<h2><a class="header" href="#cursos-13" id="cursos-13">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=BRdcRFvuqsE&amp;list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8">The Net Ninja: REST API (Node)</a></li>
+<li><a href="https://www.youtube.com/watch?v=SonwZ6MF5BE">Golang REST API With Mux</a></li>
+</ol>
+<h1><a class="header" href="#graphql" id="graphql">GraphQL</a></h1>
+<h2><a class="header" href="#cursos-14" id="cursos-14">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=Y0lDGjwRYKw&amp;list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f">The Net Ninja: GraphQL API</a></li>
+</ol>
+<h1><a class="header" href="#devops" id="devops">DevOps</a></h1>
+<h2><a class="header" href="#relacionados-6" id="relacionados-6">Relacionados</a></h2>
+<ul>
+<li><a href="./docker.html">Docker</a></li>
+<li><a href="./kubernetes.html">Kubernetes</a></li>
+<li><a href="./linux.html">Linux</a></li>
+<li><a href="./cloud.html">Cloud</a></li>
+<li><a href="./ansible.html">Ansible</a></li>
+</ul>
+<h1><a class="header" href="#docker" id="docker">Docker</a></h1>
+<h2><a class="header" href="#podcasts-11" id="podcasts-11">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2016/05/podcast-1-docker/">Lambda3 Podcast 1 – Docker</a></li>
+<li><a href="https://hipsters.tech/containers-e-docker-hipsters-75/">Containers e Docker – Hipsters #75</a></li>
+</ol>
+<h2><a class="header" href="#videos-20" id="videos-20">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=IbUXb4pQbPY">What is Docker? Why it's popular and how to use it to save money (tutorial)</a></li>
+<li><a href="https://www.youtube.com/watch?v=AMGJoVgkjGk">Virtual Machines and Containers for Beginners</a></li>
+<li><a href="https://www.youtube.com/watch?v=hBObTO56VTY">Compose v3, Swarm e Docker Stack - Parte1</a></li>
+<li><a href="https://www.youtube.com/watch?v=wyI6g4NNcI8&amp;t">Cluster Swarm, Docker Stack e o Compose V3 - parte2</a></li>
+</ol>
+<h2><a class="header" href="#comunidade-5" id="comunidade-5">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/dockerbr">Telegram - dockerbr</a></li>
+</ol>
+<h1><a class="header" href="#kubernetes" id="kubernetes">Kubernetes</a></h1>
+<h2><a class="header" href="#podcasts-12" id="podcasts-12">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2018/04/lambda3-podcast-94-kubernetes/">Lambda3 Podcast 92 – Kubernetes</a></li>
+</ol>
+<h2><a class="header" href="#comunidade-6" id="comunidade-6">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/kubernetesbr">Telegram - Kubernetesbr</a></li>
+</ol>
+<h1><a class="header" href="#linux" id="linux">Linux</a></h1>
+<h2><a class="header" href="#livros-20" id="livros-20">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/LinuxBook/">Linux Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/BashBook/">Bash Notes for Professionals book</a></li>
+<li><a href="https://books.goalkicker.com/PowerShellBook/">PowerShell Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-15" id="cursos-15">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-basico-de-linux-debian?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-basico-de-linux-debian">Jornada do Dev: Curso Básico de Linux (Debian)</a></li>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-linux-ubuntu?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-linux-ubuntu">Jornada do Dev: Curso completo de Linux (Ubuntu)</a></li>
+</ol>
+<h2><a class="header" href="#videos-21" id="videos-21">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=yVpbFMhOAwE">How Linux is Built</a></li>
+<li><a href="https://www.youtube.com/watch?v=o8NPllzkFhE">The mind behind Linux | Linus Torvalds</a></li>
+<li><a href="https://www.youtube.com/watch?v=5ocq6_3-nEw">The Story of Linux</a></li>
+</ol>
+<h1><a class="header" href="#cloud" id="cloud">Cloud</a></h1>
+<h2><a class="header" href="#podcasts-13" id="podcasts-13">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2016/12/podcast-20-azure/">Lambda3 Podcast 20 – Azure</a></li>
+</ol>
+<h2><a class="header" href="#videos-22" id="videos-22">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=4lLskYgpKKo">Cloud Hosting vs Traditional Hosting</a></li>
+</ol>
+<h1><a class="header" href="#ansible" id="ansible">Ansible</a></h1>
+<h2><a class="header" href="#artigos-15" id="artigos-15">Artigos</a></h2>
+<ol>
+<li><a href="https://medium.com/@ahmadfarag/ansible-in-action-f2f17706931">Ansible In Action</a></li>
+</ol>
+<h2><a class="header" href="#comunidade-7" id="comunidade-7">Comunidade</a></h2>
+<ol>
+<li><a href="https://t.me/ansiblebr">Telegram - ansible-users-br</a></li>
+</ol>
+<h1><a class="header" href="#banco-de-dados" id="banco-de-dados">Banco de Dados</a></h1>
+<h2><a class="header" href="#relacionados-7" id="relacionados-7">Relacionados</a></h2>
+<ul>
+<li><a href="./sql.html">SQL</a>
+<ul>
+<li><a href="./mysql.html">MySQL</a></li>
+<li><a href="./postgresql.html">PostgreSQL</a></li>
+<li><a href="./sql_server.html">SQL Server</a></li>
+<li><a href="./oracle_db.html">OracleDB</a></li>
+</ul>
+</li>
+<li><a href="./no_sql.html">NoSQL</a>
+<ul>
+<li><a href="./mongo_db.html">MongoDB</a> </li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#sql" id="sql">SQL</a></h1>
+<h2><a class="header" href="#livros-21" id="livros-21">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/SQLBook/">SQL Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#relacionados-8" id="relacionados-8">Relacionados</a></h2>
+<ul>
+<li><a href="./mysql.html">MySQL</a></li>
+<li><a href="./postgresql.html">PostgreSQL</a></li>
+<li><a href="./sql_server.html">SQL Server</a></li>
+<li><a href="./oracle_db.html">OracleDB</a> </li>
+</ul>
+<h1><a class="header" href="#mysql" id="mysql">MySQL</a></h1>
+<h2><a class="header" href="#livros-22" id="livros-22">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/MySQLBook/">MySQL Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#artigos-16" id="artigos-16">Artigos</a></h2>
+<ol>
+<li><a href="https://medium.com/@johnathanfercher/mysql-docker-7ff6d50d6cf1">MySQL + Docker: Subindo um banco de dados MySQL em um container Docker</a></li>
+</ol>
+<h2><a class="header" href="#cursos-16" id="cursos-16">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-completo-de-mysql?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-completo-de-mysql">Jornada do Dev: Curso completo de MySQL</a></li>
+</ol>
+<h1><a class="header" href="#postgresql" id="postgresql">PostgreSQL</a></h1>
+<h2><a class="header" href="#livros-23" id="livros-23">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/PostgreSQLBook/">PostgreSQL Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#sql-server" id="sql-server">SQL Server</a></h1>
+<h2><a class="header" href="#livros-24" id="livros-24">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/MicrosoftSQLServerBook/">Microsoft SQL Server Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#oracledb" id="oracledb">OracleDB</a></h1>
+<h2><a class="header" href="#livros-25" id="livros-25">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/OracleDatabaseBook/">Oracle Database Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#nosql" id="nosql">NoSQL</a></h1>
+<h2><a class="header" href="#livros-26" id="livros-26">Livros</a></h2>
+<ol>
+<li><a href="https://martinfowler.com/books/nosql.html">NoSQL Distilled</a></li>
+</ol>
+<h2><a class="header" href="#artigos-17" id="artigos-17">Artigos</a></h2>
+<ol>
+<li><a href="https://www.mongodb.com/nosql-explained?lang=pt-br">NoSQL Databases Explained</a></li>
+</ol>
+<h2><a class="header" href="#videos-23" id="videos-23">Videos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=7Pg5AMSInJ0">Say NO to NoSQL in 2018!</a></li>
+</ol>
+<h2><a class="header" href="#relacionados-9" id="relacionados-9">Relacionados</a></h2>
+<ul>
+<li><a href="./mongo_db.html">MongoDB</a> </li>
+</ul>
+<h1><a class="header" href="#mongodb" id="mongodb">MongoDB</a></h1>
+<h2><a class="header" href="#livros-27" id="livros-27">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/MongoDBBook/">MongoDB Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#cursos-17" id="cursos-17">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-de-mongodb?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-de-mongodb">Jornada do Dev: Curso de MongoDB</a></li>
+<li><a href="https://www.youtube.com/watch?v=9OPP_1eAENg&amp;list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u">The Net Ninja: MongoDB</a></li>
+</ol>
+<h1><a class="header" href="#metodologias-Ágeis" id="metodologias-Ágeis">Metodologias Ágeis</a></h1>
+<h2><a class="header" href="#artigos-18" id="artigos-18">Artigos</a></h2>
+<ol>
+<li><a href="http://www.manifestoagil.com.br/">Manifesto Ágil</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-14" id="podcasts-14">Podcasts</a></h2>
+<ol>
+<li><a href="https://jovemnerd.com.br/nerdcast/nerdtech/metodologias-ageis/">Nerdcast (NerdTech 18) - Metodologias Ágeis</a></li>
+<li><a href="https://www.lambda3.com.br/2017/01/podcast-26-agilidade-morreu/">Lambda3 Podcast 26 – Agilidade morreu?</a></li>
+<li><a href="https://www.lambda3.com.br/2016/12/podcast-24-transformacao-agil/">Lambda3 Podcast 24 – Transformação Ágil</a></li>
+<li><a href="https://www.lambda3.com.br/2016/12/podcast-22-agilidade/">Lambda3 Podcast 22 – Agilidade</a></li>
+<li><a href="https://www.lambda3.com.br/2018/03/lambda3-podcast-88-sera-que-o-devops-acabou-com-a-agilidade/">Lambda3 Podcast 88 – Será que o DevOps acabou com a Agilidade?</a></li>
+<li><a href="https://hipsters.tech/scrum-e-agile-para-alem-de-tecnologia-hipsters-115/">Scrum e Agile para além de Tecnologia – Hipsters #115</a></li>
+<li><a href="https://hipsters.tech/agile-trends-lean-inception-kanban-comunidades-hipsters-on-the-road-02/">Agile Trends: Lean Inception, Kanban, Comunidades – Hipsters On The Road #02</a></li>
+<li><a href="https://hipsters.tech/mvp-produto-minimo-viavel-hipsters-49/">MVP: Produto Mínimo Viável – Hipsters #49</a></li>
+<li><a href="https://hipsters.tech/agilidade-hipsters-05/">Agilidade – Hipsters #05</a></li>
+<li><a href="https://devnaestrada.com.br/2016/03/11/devnaestrada-um-pouco-de-agile.html">DNE 44 - Cultura Agile </a></li>
+</ol>
+<h2><a class="header" href="#relacionados-10" id="relacionados-10">Relacionados</a></h2>
+<ul>
+<li><a href="./scrum.html">Scrum</a></li>
+<li><a href="./xp.html">Extreme Programming</a></li>
+<li><a href="./kanban.html">Kanban</a></li>
+</ul>
+<h1><a class="header" href="#scrum" id="scrum">Scrum</a></h1>
+<h2><a class="header" href="#artigos-19" id="artigos-19">Artigos</a></h2>
+<ol>
+<li><a href="http://www.desenvolvimentoagil.com.br/scrum/">Desenvolvimento Ágil - SCRUM</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-15" id="podcasts-15">Podcasts</a></h2>
+<ol>
+<li><a href="https://hipsters.tech/scrum-do-zero-ao-sprint-hipsters-54/">Scrum: do zero ao Sprint – Hipsters #54</a></li>
+</ol>
+<h2><a class="header" href="#livros-28" id="livros-28">Livros</a></h2>
+<ol>
+<li><a href="https://www.amazon.com.br/Scrum-Dobro-Trabalho-Metade-Tempo/dp/8544100872">Scrum. A Arte de Faze o Dobro do Trabalho na Metade do Tempo</a></li>
+</ol>
+<h1><a class="header" href="#extreme-programming" id="extreme-programming">Extreme Programming</a></h1>
+<h2><a class="header" href="#artigos-20" id="artigos-20">Artigos</a></h2>
+<ol>
+<li><a href="http://www.desenvolvimentoagil.com.br/xp/">Desenvolvimento Agil - XP</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-16" id="podcasts-16">Podcasts</a></h2>
+<ol>
+<li><a href="https://devnaestrada.com.br/2018/11/29/xtreme-programming.html">DNE 183 - Xtreme Programming</a></li>
+</ol>
+<h1><a class="header" href="#kanban" id="kanban">Kanban</a></h1>
+<h2><a class="header" href="#artigos-21" id="artigos-21">Artigos</a></h2>
+<ol>
+<li><a href="https://www.devmedia.com.br/kanban-4-passos-para-implementar-em-uma-equipe/30218">Devmedia - Kanban: 4 passos para implementar em uma equipe</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-17" id="podcasts-17">Podcasts</a></h2>
+<ol>
+<li><a href="https://hipsters.tech/kanban-e-o-fluxo-de-trabalho-hipsters-74/">Kanban e o fluxo de trabalho – Hipsters #74</a></li>
+</ol>
+<h1><a class="header" href="#git" id="git">Git</a></h1>
+<h2><a class="header" href="#livros-29" id="livros-29">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/GitBook/">Git Notes for Professionals book</a></li>
+</ol>
+<h2><a class="header" href="#artigos-22" id="artigos-22">Artigos</a></h2>
+<ol>
+<li><a href="https://nvie.com/posts/a-successful-git-branching-model/">Gitflow - A successful Git branching model</a></li>
+<li><a href="https://www.previousnext.com.au/blog/intro-cherry-picking-git">Intro to Cherry Picking with Git</a></li>
+</ol>
+<h2><a class="header" href="#podcasts-18" id="podcasts-18">Podcasts</a></h2>
+<ol>
+<li><a href="https://www.lambda3.com.br/2019/01/lambda3-podcast-124-fluxo-de-desenvolvimento-com-git/">Lambda3 Podcast 124 – Fluxo de desenvolvimento com git</a></li>
+<li><a href="https://www.lambda3.com.br/2016/06/podcast-3-git/">Lambda3 Podcast 3 – Git</a></li>
+<li><a href="https://hipsters.tech/git-e-github-hipsters-109/">Git e Github – Hipsters #109</a></li>
+<li><a href="https://hipsters.tech/pull-requests-e-code-review-hipsters-64/">Pull Requests e Code Review – Hipsters #64</a></li>
+</ol>
+<h2><a class="header" href="#cursos-18" id="cursos-18">Cursos</a></h2>
+<ol>
+<li><a href="https://jornadadodev.com.br/cursos/curso-basico-de-git?utm_source=facebook&amp;utm_campaign=desenvolvimento_web&amp;utm_medium=grupos&amp;utm_content=curso-basico-de-git">Jornada do Dev: Curso Básico de GIT</a></li>
+<li><a href="https://www.youtube.com/watch?v=3RjQznt-8kE&amp;list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR">The Net Ninja: Git &amp; Github</a></li>
+</ol>
+<h1><a class="header" href="#algoritmos" id="algoritmos">Algoritmos</a></h1>
+<h2><a class="header" href="#livros-30" id="livros-30">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/AlgorithmsBook/">Algorithms Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#security" id="security">Security</a></h1>
+<h2><a class="header" href="#auth" id="auth">Auth</a></h2>
+<h3><a class="header" href="#cursos-19" id="cursos-19">Cursos</a></h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=sakQbeRjgwg&amp;list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x">The Net Ninja: Passport.JS</a></li>
+<li><a href="https://www.youtube.com/watch?v=aN1LnNq4z54&amp;list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ">The Net Ninja: Auth Firebase</a></li>
+</ol>
+<h1><a class="header" href="#latex" id="latex">LaTeX</a></h1>
+<h2><a class="header" href="#livros-31" id="livros-31">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/LaTeXBook/">LaTeX Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#matlab" id="matlab">Matlab</a></h1>
+<h2><a class="header" href="#livros-32" id="livros-32">Livros</a></h2>
+<ol>
+<li><a href="https://books.goalkicker.com/MATLABBook/">MATLAB Notes for Professionals book</a></li>
+</ol>
+<h1><a class="header" href="#regex" id="regex">Regex</a></h1>
+<h2><a class="header" href="#cursos-20" id="cursos-20">Cursos</a></h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=r6I-Ahc0HB4&amp;list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD">The Net Ninja: Regex</a></li>
+</ol>
+<h1><a class="header" href="#lean-startup" id="lean-startup">Lean Startup</a></h1>
+<h2><a class="header" href="#livros-33" id="livros-33">Livros</a></h2>
+<ol>
+<li><a href="https://www.amazon.com.br/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898">The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a></li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
